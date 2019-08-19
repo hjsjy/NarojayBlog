@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NarojayBlog.Webapi", "NarojayBlog.Webapi\NarojayBlog.Webapi.csproj", "{78F9C041-C1AF-4E31-A5AD-C8ABD7CDC753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NarojayBlog.Common", "NarojayBlog.Common\NarojayBlog.Common.csproj", "{03A2637A-E2D2-4640-8718-9E88F6B99CFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78F9C041-C1AF-4E31-A5AD-C8ABD7CDC753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F9C041-C1AF-4E31-A5AD-C8ABD7CDC753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F9C041-C1AF-4E31-A5AD-C8ABD7CDC753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F9C041-C1AF-4E31-A5AD-C8ABD7CDC753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03A2637A-E2D2-4640-8718-9E88F6B99CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03A2637A-E2D2-4640-8718-9E88F6B99CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03A2637A-E2D2-4640-8718-9E88F6B99CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03A2637A-E2D2-4640-8718-9E88F6B99CFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DF58882-D2EC-484A-A9DF-F6E88F14C7BC}
+	EndGlobalSection
+EndGlobal
