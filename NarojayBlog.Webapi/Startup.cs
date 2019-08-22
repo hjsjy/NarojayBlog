@@ -18,10 +18,10 @@ namespace NarojayBlog.Webapi
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new Info
@@ -31,10 +31,12 @@ namespace NarojayBlog.Webapi
                     Description = "restful api for narojay blog"
                 });
             });
+            var connectionString = Configuration.GetConnectionString("pgsql");
+            services.AddDbContext<>()
             services.AddMappings();
+
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -43,7 +45,6 @@ namespace NarojayBlog.Webapi
             }
             else
             {
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
