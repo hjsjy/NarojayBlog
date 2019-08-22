@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NarojayBlog.Webapi.Helper;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
@@ -30,7 +31,7 @@ namespace NarojayBlog.Webapi
                     Description = "restful api for narojay blog"
                 });
             });
-
+            services.AddMappings();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
