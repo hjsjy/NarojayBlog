@@ -4,6 +4,7 @@
 ### 目前正在开发后端Api 
 - 云服务器 阿里云 ubuntu 18.04
 - 数据库 : postgresql
-- 框架  asp.netcore webapi/EntityFrameWorkCore/AutoMapper
+- nosql :redis
+- 框架  asp.netcore webapi/EntityFrameWorkCore/AutoMapper/
 
 
