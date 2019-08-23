@@ -14,9 +14,9 @@ namespace NarojayBlog.Repository.Repository
         protected readonly NarojayContext DbContext;
         protected readonly DbSet<TModel> DbSet;
 
-        protected BaseRepository(NarojayContext dbContext,DbSet<TModel> dbSet)
+        protected BaseRepository(NarojayContext context,DbSet<TModel> dbSet)
         {
-            DbContext = dbContext;
+            DbContext = context;
             DbSet = dbSet;
         }
         public bool Insert(TModel model)

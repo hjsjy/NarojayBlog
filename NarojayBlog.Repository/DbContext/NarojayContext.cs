@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using NarojayBlog.DatabaseRepository.Model;
-
 namespace NarojayBlog.DatabaseRepository.DbContext
 {
-    public class NarojayContext :Microsoft.EntityFrameworkCore.DbContext
+    public class NarojayContext : Microsoft.EntityFrameworkCore.DbContext
     {
         public NarojayContext(DbContextOptions<NarojayContext> options) : base(options)
         {
