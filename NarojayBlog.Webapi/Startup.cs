@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NarojayBlog.DatabaseRepository.DbContext;
 using NarojayBlog.Webapi.Helper;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerUI;
@@ -32,7 +34,7 @@ namespace NarojayBlog.Webapi
                 });
             });
             var connectionString = Configuration.GetConnectionString("pgsql");
-            services.AddDbContext<>()
+            services.AddDbContext<NarojayContext>(options => options.UseNpgsql(connectionString));
             services.AddMappings();
 
         }

@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.DatabaseReposit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.Core", "NarojayBlog.Core\NarojayBlog.Core.csproj", "{CB750D15-3B9D-41E2-A420-D0CD6EE378FE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.IRepository", "NarojayBlog.IRpository\NarojayBlog.IRepository.csproj", "{86BB0B64-496B-4586-80A1-23B2C66E1FA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.Repository", "NarojayBlog.IRpository\NarojayBlog.Repository.csproj", "{86BB0B64-496B-4586-80A1-23B2C66E1FA8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NarojayBlog.ViewModel", "NarojayBlog.ViewModel\NarojayBlog.ViewModel.csproj", "{A81CB8E5-3150-47C8-BEC4-17215E01DC12}"
 EndProject

@@ -2,6 +2,6 @@
 {
     public abstract class BaseModel
     {
-        public string Id { get; set; }
+        public virtual string Id { get; set; }
     }
 }
