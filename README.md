@@ -1,5 +1,5 @@
 # the repositoy is  a personal blog based on asp.net core 2.2 webapi and vue.js
-## [中文介绍](https://github.com/hjsjy/NarojayBlog/blob/master/Chinese)
+## [中文介绍](https://github.com/hjsjy/NarojayBlog/blob/master/Chinese.md)
 
 ## backend api is developing
 - server: aliyun ubuntu 18.04
