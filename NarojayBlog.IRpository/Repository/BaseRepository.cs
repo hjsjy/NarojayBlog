@@ -22,6 +22,7 @@ namespace NarojayBlog.Repository.Repository
         }
         public bool Insert(TModel model)
         {
+            model.Id = Guid.NewGuid().ToString();
             DbContext.Add(model);
             var result = DbContext.SaveChanges() > 0;
             return result;

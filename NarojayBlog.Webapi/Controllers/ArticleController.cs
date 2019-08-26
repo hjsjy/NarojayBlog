@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using NarojayBlog.IManager;
@@ -38,11 +35,11 @@ namespace NarojayBlog.Webapi.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddArticle(ArticleAddVIewModel articleAddVIewModel)
+        public IActionResult AddArticle(ArticleAddViewModel articleAddViewModel)
         {
             try
             {
-                var result = _articleManager.AddArticle(Mapper.Map<ArticleEntity>(articleAddVIewModel));
+                var result = _articleManager.AddArticle(Mapper.Map<ArticleEntity>(articleAddViewModel));
                 if (!result)
                 {
                     return BadRequest(new {Code = 1002, Content = "文章添加失败"});

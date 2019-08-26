@@ -1,4 +1,8 @@
-﻿namespace NarojayBlog.ManagerEntity
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace NarojayBlog.ManagerEntity
 {
     class Class1
     {

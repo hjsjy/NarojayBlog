@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace NarojayBlog.Webapi.Helper
+namespace NarojayBlog.Manager.Helper
 {
     //实现批量映射model
     public static class AutoMapperExtension
@@ -17,12 +17,5 @@ namespace NarojayBlog.Webapi.Helper
         }
     }
 
-    public class MappingProfile : Profile
-    {
-        public MappingProfile()
-        {
-            //CreateMap<A,B>();
-            //CreateMap<B,A>();
-        }
-    }
+
 }

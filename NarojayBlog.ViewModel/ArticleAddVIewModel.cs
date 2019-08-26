@@ -4,7 +4,7 @@ using System.Text;
 
 namespace NarojayBlog.ViewModel
 {
-    public class ArticleAddVIewModel
+    public class ArticleAddViewModel
     {
         public DateTime CreateTime { get; set; }
 

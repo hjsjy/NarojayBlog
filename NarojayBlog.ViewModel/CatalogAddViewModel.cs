@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NarojayBlog.ManagerEntity
+namespace NarojayBlog.ViewModel
 {
-    public class CatalogEntity
+    public class CatalogAddViewModel
     {
-        public string Id { get; set; }
         public string Name { get; set; }
     }
 }
