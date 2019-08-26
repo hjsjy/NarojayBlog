@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NarojayBlog.DatabaseRepository.DbContext;
+using NarojayBlog.Repository.Helper;
 using NarojayBlog.Webapi.Helper;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerUI;
@@ -35,7 +36,9 @@ namespace NarojayBlog.Webapi
             });
             var connectionString = Configuration.GetConnectionString("pgsql");
             services.AddDbContext<NarojayContext>(options => options.UseNpgsql(connectionString));
+            services.AddManager();
             services.AddMappings();
+            services.AddRepositories();
 
         }
 

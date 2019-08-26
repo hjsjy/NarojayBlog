@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
@@ -46,6 +47,16 @@ namespace NarojayBlog.Repository.Repository
             var result = DbContext.SaveChanges() > 0;
             return result;
 
+        }
+
+        public TModel GetById(string id)
+        {
+            return DbSet.FirstOrDefault(x => x.Id == id);
+        }
+
+        public IEnumerable<TModel> GetAll()
+        {
+            return DbSet.ToList();
         }
     }
 }

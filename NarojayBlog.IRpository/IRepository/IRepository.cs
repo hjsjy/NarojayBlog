@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
 using NarojayBlog.DatabaseRepository.Model;
 
@@ -10,6 +11,10 @@ namespace NarojayBlog.Repository.IRepository
         bool Delete(TModel model);
         bool Update(TModel model);
         bool DeleteBy(Expression<Func<TModel,bool>> predicate);
+
+        TModel GetById(string id);
+
+        IEnumerable<TModel> GetAll();
 
     }
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.Webapi", "NarojayBlog.Webapi\NarojayBlog.Webapi.csproj", "{78F9C041-C1AF-4E31-A5AD-C8ABD7CDC753}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.ManagerInterface", "NarojayBlog.Interface\NarojayBlog.ManagerInterface.csproj", "{323ED628-544C-4923-A2C0-1DED81817790}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.IManager", "NarojayBlog.Interface\NarojayBlog.IManager.csproj", "{323ED628-544C-4923-A2C0-1DED81817790}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.Manager", "NarojayBlog.Manager\NarojayBlog.Manager.csproj", "{69CC45DF-AE2B-48A9-8BDE-0C2CD16A227C}"
 EndProject

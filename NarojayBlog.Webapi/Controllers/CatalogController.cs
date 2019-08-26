@@ -6,9 +6,9 @@ using AutoMapper;
 
 namespace NarojayBlog.Webapi.Controllers
 {
-    public class UserController :BaseController
+    public class CatalogController : BaseController
     {
-        public UserController(IMapper mapper) : base(mapper)
+        public CatalogController(IMapper mapper) : base(mapper)
         {
         }
     }
