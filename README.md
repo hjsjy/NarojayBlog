@@ -6,5 +6,5 @@
 - 数据库 : postgresql
 - nosql :redis
 - 框架  asp.netcore webapi/EntityFrameWorkCore/AutoMapper/
-
+### 2019.8.26 项目的基本骨架已经搭建好了
 
