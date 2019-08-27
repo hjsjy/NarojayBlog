@@ -8,6 +8,8 @@ namespace NarojayBlog.DatabaseRepository.Model
 
         public string Author { get; set; }
 
+        public string Title { get;set; }
+
         public string Content { get; set; }
 
         public int ReadingAmount { get; set; }

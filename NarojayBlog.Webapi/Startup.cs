@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NarojayBlog.DatabaseRepository.DbContext;
-using NarojayBlog.Manager.Helper;
+using NarojayBlog.Webapi.Helper;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerUI;
 

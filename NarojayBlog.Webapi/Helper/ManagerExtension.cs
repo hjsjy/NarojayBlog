@@ -1,7 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using NarojayBlog.IManager;
+using NarojayBlog.Manager;
 
-namespace NarojayBlog.Manager.Helper
+namespace NarojayBlog.Webapi.Helper
 {
     public static class ManagerExtension
     {

@@ -9,7 +9,7 @@ namespace NarojayBlog.Repository.Repository
 {
     public class CatalogRepository :BaseRepository<Catalog>
     {
-        protected CatalogRepository(NarojayContext context) : base(context, context.Catalogs)
+        public CatalogRepository(NarojayContext context) : base(context, context.Catalogs)
         {
         }
     }

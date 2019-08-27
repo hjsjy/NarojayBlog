@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using NarojayBlog.Repository.Repository;
 
-namespace NarojayBlog.Manager.Helper
+namespace NarojayBlog.Webapi.Helper
 {
     public static class RepositoryExtension
     {

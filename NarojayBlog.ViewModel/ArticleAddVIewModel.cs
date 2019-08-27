@@ -10,6 +10,8 @@ namespace NarojayBlog.ViewModel
 
         public string Author { get; set; }
 
+        public string Title { get; set; }
+
         public string Content { get; set; }
 
         public int ReadingAmount { get; set; }

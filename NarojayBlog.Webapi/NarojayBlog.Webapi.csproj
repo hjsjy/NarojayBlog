@@ -18,4 +18,8 @@
     <ProjectReference Include="..\NarojayBlog.ViewModel\NarojayBlog.ViewModel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Helper\" />
+  </ItemGroup>
+
 </Project>

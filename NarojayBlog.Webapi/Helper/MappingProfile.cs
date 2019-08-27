@@ -3,7 +3,7 @@ using NarojayBlog.DatabaseRepository.Model;
 using NarojayBlog.ManagerEntity;
 using NarojayBlog.ViewModel;
 
-namespace NarojayBlog.Manager.Helper
+namespace NarojayBlog.Webapi.Helper
 {
         public class MappingProfile : Profile
         {

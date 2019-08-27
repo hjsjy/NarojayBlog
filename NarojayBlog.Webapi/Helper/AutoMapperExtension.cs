@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace NarojayBlog.Manager.Helper
+namespace NarojayBlog.Webapi.Helper
 {
     //实现批量映射model
     public static class AutoMapperExtension
