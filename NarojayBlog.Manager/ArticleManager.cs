@@ -1,10 +1,11 @@
 ﻿using AutoMapper;
+using Markdig;
 using NarojayBlog.DatabaseRepository.Model;
 using NarojayBlog.IManager;
 using NarojayBlog.ManagerEntity;
 using NarojayBlog.Repository.Repository;
-using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace NarojayBlog.Manager
 {
@@ -12,23 +13,39 @@ namespace NarojayBlog.Manager
     {
         public ArticleManager(ArticleRepository articleRepository, IMapper mapper) : base(articleRepository, mapper)
         {
-       
+
+        }
+        public int GetArticleNumber()
+        {
+            return Repository.GetArticleNumber();
+        }
+        public int CalculateArticleWordsNumber()
+        {
+            return Repository.CalculateWords().Sum();
         }
 
         public IEnumerable<ArticleEntity> GetArticles()
         {
-            return GetAll();
+            var articleEntities = GetAll();
+            foreach (var articleEntity in articleEntities)
+            {
+                articleEntity.Content = Markdown.ToHtml(articleEntity.Content);
+            }
+
+            return articleEntities;
         }
 
         public ArticleEntity GetArticleById(string id)
         {
-            
-            return GetById(id);
+            var articleEntity = GetById(id);
+            var articleContent = articleEntity.Content;
+            articleEntity.Content = Markdown.ToHtml(articleContent);
+            return articleEntity;
         }
 
         public bool AddArticle(ArticleEntity articleEntity)
         {
-           return InsertArticle(articleEntity);
+            return InsertArticle(articleEntity);
         }
     }
 }

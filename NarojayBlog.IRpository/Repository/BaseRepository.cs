@@ -28,6 +28,11 @@ namespace NarojayBlog.Repository.Repository
             return result;
         }
 
+        public IEnumerable<TModel> GetBy(Expression<Func<TModel,bool>> predicate)
+        {
+            return DbSet.Where(predicate);
+        } 
+
         public bool Delete(TModel model)
         {
             DbContext.Remove(model);

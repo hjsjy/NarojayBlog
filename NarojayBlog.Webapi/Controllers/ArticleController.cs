@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using NarojayBlog.IManager;
@@ -7,16 +8,64 @@ using NarojayBlog.ViewModel;
 
 namespace NarojayBlog.Webapi.Controllers
 {
-    public class ArticleController:BaseController
+    public class ArticleController : BaseController
 
     {
         private readonly IArticleManager _articleManager;
 
-        public ArticleController(IArticleManager articleManager,IMapper mapper) : base(mapper)
+        public ArticleController(IArticleManager articleManager, IMapper mapper) : base(mapper)
         {
             _articleManager = articleManager;
         }
-        [HttpGet]
+
+        [HttpGet("WordsNumber")]
+        public IActionResult GetWordsNumber()
+        {
+            try
+            {
+                var numbers = _articleManager.CalculateArticleWordsNumber();
+                return Ok(numbers);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpGet("Title")]
+        public IActionResult GetTitleNumber()
+        {
+            try
+            {
+                var numbers = _articleManager.GetArticleNumber();
+                return Ok(numbers);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpGet("Articles")]
+        public IActionResult GetArticles()
+        {
+            try
+            {
+                var articleEntities = _articleManager.GetArticles();
+                if (!articleEntities.Any())
+                {
+                    return NoContent();
+                }
+
+                return Ok(articleEntities);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+        ///
+        [HttpGet("Article/{id}")]
         public IActionResult GetArticle(string id)
         {
             try
@@ -24,7 +73,7 @@ namespace NarojayBlog.Webapi.Controllers
                 var articleEntity = _articleManager.GetArticleById(id);
                 if (articleEntity == null)
                 {
-                    return BadRequest(new { Code= 1001,Content = "文章不存在"});
+                    return NoContent();
                 }
                 return Ok(articleEntity);
             }

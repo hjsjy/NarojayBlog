@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using NarojayBlog.ManagerEntity;
+﻿using NarojayBlog.ManagerEntity;
+using System.Collections.Generic;
 
 namespace NarojayBlog.IManager
 {
@@ -10,5 +10,8 @@ namespace NarojayBlog.IManager
         ArticleEntity GetArticleById(string id);
 
         bool AddArticle(ArticleEntity articleEntity);
+        int CalculateArticleWordsNumber();
+        int GetArticleNumber();
+
     }
 }
