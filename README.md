@@ -13,4 +13,5 @@
 
 ## Development process
 - 2019.8.26 the structure of project is completed.
-
+- 2019.8.27 put a record of domain name.
+- 2019.8.29 configure nginx to deliver static HTML pages |   [narojayblog]("www.narojay.com")
