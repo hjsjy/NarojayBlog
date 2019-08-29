@@ -9,6 +9,7 @@ namespace NarojayBlog.Webapi.Helper
         {
             services.AddScoped<ArticleRepository>();
             services.AddScoped<CatalogRepository>();
+            services.AddScoped<GuestBookRepository>();
         }
     }
 }

@@ -10,6 +10,7 @@ namespace NarojayBlog.Webapi.Helper
         {
             services.AddScoped<IArticleManager, ArticleManager>();
             services.AddScoped<ICatalogManager, CatalogManager>();
+            services.AddScoped<IGuestBookManager, GuestBookManager>();
         }
     }
 }

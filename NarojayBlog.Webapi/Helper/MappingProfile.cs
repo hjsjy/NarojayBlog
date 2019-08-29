@@ -16,16 +16,17 @@ namespace NarojayBlog.Webapi.Helper
             CreateMap<ArticleEntity, ArticleAddViewModel>();
             #endregion
 
-
             #region Catalog
-
             CreateMap<Catalog, CatalogEntity>();
             CreateMap<CatalogEntity, Catalog>();
             CreateMap<CatalogAddViewModel, CatalogEntity>();
             CreateMap<CatalogEntity, CatalogAddViewModel>();
-
             #endregion
 
+            #region GuestBook
+            CreateMap<GuestBook, GuestBookEntity>();
+            CreateMap<GuestBookEntity, GuestBook>();
+            #endregion
 
         }
         }
