@@ -11,5 +11,7 @@ namespace NarojayBlog.Webapi.Controllers
         public GustBookController(IMapper mapper) : base(mapper)
         {
         }
+
+
     }
 }
