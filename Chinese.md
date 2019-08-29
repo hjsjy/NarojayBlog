@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/hj200812/TestProject/_apis/build/status/TestProject?branchName=master)](https://dev.azure.com/hj200812/TestProject/_build/latest?definitionId=2&branchName=master)
 # 本项目是基于.net core 2.2 + vue.js 开发的个人博客
 
 
