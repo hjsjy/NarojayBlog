@@ -6,14 +6,17 @@ using NarojayBlog.ManagerEntity;
 using NarojayBlog.Repository.Repository;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Extensions.Logging;
 
 namespace NarojayBlog.Manager
 {
     public class ArticleManager : BaseManager<Article, ArticleEntity, ArticleRepository>, IArticleManager
     {
-        public ArticleManager(ArticleRepository articleRepository, IMapper mapper) : base(articleRepository, mapper)
-        {
+        private readonly ILogger _logger;
 
+        public ArticleManager(ArticleRepository articleRepository, IMapper mapper,ILogger<ArticleManager> logger ) : base(articleRepository, mapper)
+        {
+            _logger = logger;
         }
         public int GetArticleNumber()
         {
@@ -21,7 +24,9 @@ namespace NarojayBlog.Manager
         }
         public int CalculateArticleWordsNumber()
         {
+            _logger.LogInformation("calculate the total number of article words");
             return Repository.CalculateWords().Sum();
+           
         }
 
         public IEnumerable<ArticleEntity> GetArticles()
@@ -31,6 +36,7 @@ namespace NarojayBlog.Manager
             {
                 articleEntity.Content = Markdown.ToHtml(articleEntity.Content);
             }
+            
 
             return articleEntities;
         }

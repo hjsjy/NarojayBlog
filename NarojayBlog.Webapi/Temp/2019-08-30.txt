@@ -1,0 +1,15 @@
+2019-08-30 16:32:00,151 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-08-30 16:32:00,743 [9] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/index.html   
+ 
+2019-08-30 16:32:00,905 [9] INFO  App  
+ Request finished in 162.1618ms 200 text/html 
+ 
+2019-08-30 16:32:01,073 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/v1/swagger.json   
+ 
+2019-08-30 16:32:01,251 [6] INFO  App  
+ Request finished in 178.2927ms 200 application/json;charset=utf-8 
+ 

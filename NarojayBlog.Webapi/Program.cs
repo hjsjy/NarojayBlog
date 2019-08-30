@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace NarojayBlog.Webapi
 {
@@ -11,7 +12,7 @@ namespace NarojayBlog.Webapi
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+            WebHost.CreateDefaultBuilder(args).ConfigureLogging((context, logging) => { logging.AddLog4Net(); })
                 .UseStartup<Startup>();
     }
 }
