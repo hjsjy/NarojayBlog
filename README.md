@@ -6,7 +6,7 @@
 - server: aliyun ubuntu 18.04
 - database : postgresql
 - nosql :redis
-- framework  asp.netcore webapi/EntityFrameWorkCore/AutoMapper/markdig
+- framework  asp.netcore webapi/EntityFrameWorkCore/AutoMapper/markdig/log4net
 
 
 
