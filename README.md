@@ -2,7 +2,7 @@
 [![HitCount](http://hits.dwyl.io/hj200812@126com/NarojayBlog.svg)](http://hits.dwyl.io/hj200812@126com/NarojayBlog)
 
 [中文介绍](https://github.com/hjsjy/NarojayBlog/blob/master/Chinese.md)
-## the repositoy is  a personal blog based on asp.net core 2.2 webapi and vue.js
+## the repository is  a personal blog based on asp.net core 2.2 webapi and vue.js
 - server: aliyun ubuntu 18.04
 - database : postgresql
 - nosql :redis
