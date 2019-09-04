@@ -16,3 +16,4 @@
 - 2019.8.27 put a record of domain name.
 - 2019.8.29 configure nginx to deliver static HTML pages |   [narojayblog](http://www.narojay.com)
 - 2019.8.30 add log4net.
+- 2019.9.4 deploy static website by docker.
