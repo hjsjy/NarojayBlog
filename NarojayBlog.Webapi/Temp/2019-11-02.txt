@@ -1,0 +1,600 @@
+2019-11-02 13:07:11,178 [1] INFO  App  
+ User profile is available. Using 'C:\Users\黄杰\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-11-02 13:07:11,724 [10] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/index.html   
+ 
+2019-11-02 13:07:11,869 [10] INFO  App  
+ Request finished in 144.3861ms 200 text/html 
+ 
+2019-11-02 13:07:12,212 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/v1/swagger.json   
+ 
+2019-11-02 13:07:12,387 [6] INFO  App  
+ Request finished in 172.9605ms 200 application/json;charset=utf-8 
+ 
+2019-11-02 13:31:09,949 [1] INFO  App  
+ User profile is available. Using 'C:\Users\黄杰\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-11-02 13:31:10,411 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/index.html   
+ 
+2019-11-02 13:31:10,542 [6] INFO  App  
+ Request finished in 131.5578ms 200 text/html 
+ 
+2019-11-02 13:31:10,723 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/v1/swagger.json   
+ 
+2019-11-02 13:31:10,880 [6] INFO  App  
+ Request finished in 156.7425ms 200 application/json;charset=utf-8 
+ 
+2019-11-02 13:35:02,282 [5] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:35:02,329 [5] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:35:02,418 [5] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:35:02,442 [5] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:35:02,894 [5] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:35:03,291 [5] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:35:04,047 [5] INFO  App  
+ Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:35:04,260 [5] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1361.4553ms. 
+ 
+2019-11-02 13:35:04,270 [5] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:35:04,286 [5] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 1839.2049ms 
+ 
+2019-11-02 13:35:04,288 [5] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:35:04,291 [5] INFO  App  
+ Request finished in 2009.3006ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:35:05,845 [12] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:35:05,852 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:35:05,860 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:35:05,863 [12] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:35:05,889 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:35:05,894 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:35:05,917 [12] INFO  App  
+ Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:35:05,923 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28.6552ms. 
+ 
+2019-11-02 13:35:05,927 [12] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:35:05,931 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 64.6724ms 
+ 
+2019-11-02 13:35:05,933 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:35:05,935 [12] INFO  App  
+ Request finished in 90.3276ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:35:07,068 [5] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:35:07,071 [5] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:35:07,075 [5] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:35:07,078 [5] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:35:07,099 [5] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:35:07,102 [5] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:35:07,123 [5] INFO  App  
+ Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:35:07,126 [5] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.2442ms. 
+ 
+2019-11-02 13:35:07,128 [5] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:35:07,131 [5] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 50.6099ms 
+ 
+2019-11-02 13:35:07,133 [5] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:35:07,136 [5] INFO  App  
+ Request finished in 69.2635ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:35:08,374 [12] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:35:08,377 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:35:08,381 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:35:08,391 [12] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:35:08,459 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:35:08,462 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:35:08,483 [12] INFO  App  
+ Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:35:08,485 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.958ms. 
+ 
+2019-11-02 13:35:08,489 [12] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:35:08,493 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 96.9787ms 
+ 
+2019-11-02 13:35:08,495 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:35:08,498 [12] INFO  App  
+ Request finished in 135.4957ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:36:58,695 [12] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:36:58,710 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:36:58,746 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:36:58,749 [12] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:36:58,788 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:36:58,793 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:36:58,826 [12] INFO  App  
+ Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:36:58,828 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 36.9994ms. 
+ 
+2019-11-02 13:36:58,831 [12] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:36:58,842 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 82.836ms 
+ 
+2019-11-02 13:36:58,845 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:36:58,847 [12] INFO  App  
+ Request finished in 151.6565ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:37:09,519 [12] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:37:09,522 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:37:09,527 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:37:09,530 [12] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:37:09,553 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:37:09,555 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:37:09,575 [12] INFO  App  
+ Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:37:09,578 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22.6308ms. 
+ 
+2019-11-02 13:37:09,580 [12] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:37:09,583 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 49.9494ms 
+ 
+2019-11-02 13:37:09,586 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:37:09,591 [12] INFO  App  
+ Request finished in 69.787ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:37:10,448 [22] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:37:10,451 [22] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:37:10,454 [22] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:37:10,457 [22] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:37:10,478 [22] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:37:10,482 [22] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:37:10,504 [22] INFO  App  
+ Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:37:10,508 [22] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 26.5387ms. 
+ 
+2019-11-02 13:37:10,510 [22] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:37:10,513 [22] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 52.9363ms 
+ 
+2019-11-02 13:37:10,515 [22] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:37:10,518 [22] INFO  App  
+ Request finished in 71.4523ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:37:11,652 [12] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:37:11,655 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:37:11,659 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:37:11,663 [12] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:37:11,684 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:37:11,688 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:37:11,708 [12] INFO  App  
+ Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:37:11,711 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.6763ms. 
+ 
+2019-11-02 13:37:11,714 [12] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:37:11,717 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 51.4782ms 
+ 
+2019-11-02 13:37:11,720 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:37:11,723 [12] INFO  App  
+ Request finished in 70.4154ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:37:13,692 [12] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:37:13,695 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:37:13,699 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:37:13,702 [12] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:37:13,722 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:37:13,725 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:37:13,747 [12] INFO  App  
+ Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:37:13,749 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.9162ms. 
+ 
+2019-11-02 13:37:13,752 [12] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:37:13,754 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 50.0807ms 
+ 
+2019-11-02 13:37:13,757 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:37:13,759 [12] INFO  App  
+ Request finished in 68.6192ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:39:06,186 [12] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:39:06,189 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:39:06,206 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:39:06,211 [12] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:39:06,233 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:39:06,244 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:39:06,265 [12] INFO  App  
+ Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:39:06,268 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 32.5432ms. 
+ 
+2019-11-02 13:39:06,270 [12] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:39:06,278 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 58.0276ms 
+ 
+2019-11-02 13:39:06,280 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:39:06,282 [12] INFO  App  
+ Request finished in 96.8127ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:41:15,382 [12] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:41:15,393 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:41:15,429 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:41:15,474 [12] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:41:15,541 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:41:15,544 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:41:15,565 [12] INFO  App  
+ Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:41:15,568 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.2984ms. 
+ 
+2019-11-02 13:41:15,570 [12] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:41:15,578 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 96.1927ms 
+ 
+2019-11-02 13:41:15,580 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:41:15,582 [12] INFO  App  
+ Request finished in 201.7205ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:48:23,427 [12] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:48:23,437 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:48:23,453 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:48:23,456 [12] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:48:23,478 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:48:23,481 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:48:23,558 [12] INFO  App  
+ Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:48:23,561 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 80.6358ms. 
+ 
+2019-11-02 13:48:23,564 [12] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:48:23,573 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 107.9298ms 
+ 
+2019-11-02 13:48:23,576 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:48:23,580 [12] INFO  App  
+ Request finished in 151.5123ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:48:27,510 [32] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:48:27,512 [32] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:48:27,539 [32] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:48:27,545 [32] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:48:27,608 [32] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:48:27,611 [32] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:48:27,636 [32] INFO  App  
+ Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:48:27,638 [32] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 28.0602ms. 
+ 
+2019-11-02 13:48:27,640 [32] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:48:27,643 [32] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 95.1686ms 
+ 
+2019-11-02 13:48:27,645 [32] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:48:27,649 [32] INFO  App  
+ Request finished in 137.7799ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:51:33,285 [12] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:51:33,292 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:51:33,316 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:51:33,319 [12] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:51:33,343 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:51:33,346 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:51:33,399 [12] INFO  App  
+ Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:51:33,415 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 56.3574ms. 
+ 
+2019-11-02 13:51:33,442 [12] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:51:33,455 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 132.0575ms 
+ 
+2019-11-02 13:51:33,463 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:51:33,466 [12] INFO  App  
+ Request finished in 193.226ms 200 application/json; charset=utf-8 
+ 
+2019-11-02 13:51:44,827 [12] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-11-02 13:51:44,830 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-11-02 13:51:44,836 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:51:44,839 [12] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-11-02 13:51:44,863 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-11-02 13:51:44,866 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-11-02 13:51:44,887 [12] INFO  App  
+ Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-11-02 13:51:44,890 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.6684ms. 
+ 
+2019-11-02 13:51:44,892 [12] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-11-02 13:51:44,897 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 53.3617ms 
+ 
+2019-11-02 13:51:44,900 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-11-02 13:51:44,906 [12] INFO  App  
+ Request finished in 76.0445ms 200 application/json; charset=utf-8 
+ 

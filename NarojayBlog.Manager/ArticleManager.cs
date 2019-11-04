@@ -53,5 +53,15 @@ namespace NarojayBlog.Manager
         {
             return InsertArticle(articleEntity);
         }
+
+        public IEnumerable<ArticleEntity> GetArticles(int page, int size)
+        {
+            var articleEntities = Repository.GetPage(page, size);
+            foreach (var articleEntity in articleEntities)
+            {
+                articleEntity.Content = Markdown.ToHtml(articleEntity.Content);
+            }
+            return Mapper.Map<IEnumerable<ArticleEntity>>(articleEntities);
+        }
     }
 }

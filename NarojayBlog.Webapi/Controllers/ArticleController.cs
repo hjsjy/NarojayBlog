@@ -1,10 +1,10 @@
-﻿using System;
-using System.Linq;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using NarojayBlog.IManager;
 using NarojayBlog.ManagerEntity;
 using NarojayBlog.ViewModel;
+using System;
+using System.Linq;
 
 namespace NarojayBlog.Webapi.Controllers
 {
@@ -64,6 +64,28 @@ namespace NarojayBlog.Webapi.Controllers
                 return BadRequest(e.Message);
             }
         }
+        [HttpGet("Articles/{page}")]
+        public IActionResult GetArticlePage(int page,int size = 2)
+        {
+            try
+            {
+                var articles = _articleManager.GetArticles(page,size);
+                var total = _articleManager.GetArticleNumber();
+                var PageModel = new PageModel<ArticleEntity>
+                {
+                    Values = articles,
+                    Total = total,
+                    PageSize =  Math.Ceiling(Convert.ToDecimal(total / (double)size ))
+                };
+                return Ok(PageModel);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
         ///
         [HttpGet("Article/{id}")]
         public IActionResult GetArticle(string id)
@@ -91,7 +113,7 @@ namespace NarojayBlog.Webapi.Controllers
                 var result = _articleManager.AddArticle(Mapper.Map<ArticleEntity>(articleAddViewModel));
                 if (!result)
                 {
-                    return BadRequest(new {Code = 1002, Content = "文章添加失败"});
+                    return BadRequest(new { Code = 1002, Content = "文章添加失败" });
                 }
                 return Ok();
             }

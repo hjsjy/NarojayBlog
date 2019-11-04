@@ -12,6 +12,7 @@ namespace NarojayBlog.IManager
         bool AddArticle(ArticleEntity articleEntity);
         int CalculateArticleWordsNumber();
         int GetArticleNumber();
+        IEnumerable<ArticleEntity> GetArticles(int page, int size);
 
     }
 }

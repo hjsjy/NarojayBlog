@@ -43,8 +43,7 @@ namespace NarojayBlog.Webapi
             services.AddManager();
             services.AddMappings();
             services.AddRepositories();
-
-        }
+            services.AddCors();     }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
@@ -62,7 +61,10 @@ namespace NarojayBlog.Webapi
                 swaggerUiOptions.DocExpansion(DocExpansion.None);
             });
             app.UseSwagger();
-         
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod
+            ().AllowAnyHeader
+            ().AllowAnyHeader
+            ());
             app.UseHttpsRedirection();
             app.UseMvc();
         }

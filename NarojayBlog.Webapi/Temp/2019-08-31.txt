@@ -1,0 +1,116 @@
+2019-08-31 08:25:45,561 [1] INFO  App  
+ User profile is available. Using 'C:\Users\黄杰\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-08-31 08:25:45,772 [1] INFO  App  
+ Creating key {f81616bc-a7e3-4a4b-9cc2-fe2a3fb3e4e6} with creation date 2019-08-31 00:25:45Z, activation date 2019-08-31 00:25:45Z, and expiration date 2019-11-29 00:25:45Z. 
+ 
+2019-08-31 08:25:45,821 [1] INFO  App  
+ Writing data to file 'C:\Users\黄杰\AppData\Local\ASP.NET\DataProtection-Keys\key-f81616bc-a7e3-4a4b-9cc2-fe2a3fb3e4e6.xml'. 
+ 
+2019-08-31 08:25:46,453 [7] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger   
+ 
+2019-08-31 08:25:46,535 [7] INFO  App  
+ Request finished in 74.8301ms 301  
+ 
+2019-08-31 08:25:46,541 [10] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/index.html   
+ 
+2019-08-31 08:25:46,683 [10] INFO  App  
+ Request finished in 138.9202ms 200 text/html 
+ 
+2019-08-31 08:25:46,767 [11] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-08-31 08:25:46,843 [10] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/swagger-ui-bundle.js   
+ 
+2019-08-31 08:25:46,872 [8] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/swagger-ui.css   
+ 
+2019-08-31 08:25:46,909 [8] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-08-31 08:25:46,911 [10] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-08-31 08:25:46,921 [16] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-08-31 08:25:46,923 [8] INFO  App  
+ Request finished in 91.5536ms 200 text/css 
+ 
+2019-08-31 08:25:46,925 [10] INFO  App  
+ Request finished in 186.149ms 200 application/javascript 
+ 
+2019-08-31 08:25:46,942 [16] INFO  App  
+ Request finished in 108.5322ms 200 application/javascript 
+ 
+2019-08-31 08:25:47,219 [16] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/v1/swagger.json   
+ 
+2019-08-31 08:25:47,266 [10] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/favicon-32x32.png   
+ 
+2019-08-31 08:25:47,292 [10] INFO  App  
+ Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+ 
+2019-08-31 08:25:47,319 [10] INFO  App  
+ Request finished in 33.031ms 200 image/png 
+ 
+2019-08-31 08:25:47,448 [16] INFO  App  
+ Request finished in 230.1281ms 200 application/json;charset=utf-8 
+ 
+2019-08-31 08:35:20,127 [1] INFO  App  
+ User profile is available. Using 'C:\Users\黄杰\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-08-31 08:35:20,888 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/index.html   
+ 
+2019-08-31 08:35:21,047 [6] INFO  App  
+ Request finished in 199.1886ms 200 text/html 
+ 
+2019-08-31 08:35:21,471 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/v1/swagger.json   
+ 
+2019-08-31 08:35:21,635 [6] INFO  App  
+ Request finished in 164.0117ms 200 application/json;charset=utf-8 
+ 
+2019-08-31 08:36:52,268 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-08-31 08:36:52,363 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-08-31 08:36:52,431 [6] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-08-31 08:36:52,875 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-08-31 08:36:52,879 [6] INFO  App  
+ calculate the total number of article words 
+ 
+2019-08-31 08:36:53,275 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-08-31 08:36:54,150 [6] INFO  App  
+ Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-08-31 08:36:54,172 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1291.5605ms. 
+ 
+2019-08-31 08:36:54,182 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-08-31 08:36:54,195 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 1757.7363ms 
+ 
+2019-08-31 08:36:54,198 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-08-31 08:36:54,202 [6] INFO  App  
+ Request finished in 1934.5551ms 200 application/json; charset=utf-8 
+ 

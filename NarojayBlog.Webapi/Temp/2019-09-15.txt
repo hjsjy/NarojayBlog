@@ -1,0 +1,92 @@
+2019-09-15 21:17:29,162 [1] INFO  App  
+ User profile is available. Using 'C:\Users\黄杰\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-09-15 21:17:30,327 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger   
+ 
+2019-09-15 21:17:30,424 [7] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/index.html   
+ 
+2019-09-15 21:17:30,426 [6] INFO  App  
+ Request finished in 97.8736ms 301  
+ 
+2019-09-15 21:17:30,587 [7] INFO  App  
+ Request finished in 161.2575ms 200 text/html 
+ 
+2019-09-15 21:17:30,629 [11] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/swagger-ui.css   
+ 
+2019-09-15 21:17:30,630 [10] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-09-15 21:17:30,632 [7] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/swagger-ui-bundle.js   
+ 
+2019-09-15 21:17:30,711 [7] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-09-15 21:17:30,713 [6] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-09-15 21:17:30,727 [7] INFO  App  
+ Request finished in 110.9465ms 200 text/css 
+ 
+2019-09-15 21:17:30,729 [15] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-09-15 21:17:30,731 [6] INFO  App  
+ Request finished in 112.0016ms 200 application/javascript 
+ 
+2019-09-15 21:17:30,747 [15] INFO  App  
+ Request finished in 115.6269ms 200 application/javascript 
+ 
+2019-09-15 21:17:31,069 [15] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/v1/swagger.json   
+ 
+2019-09-15 21:17:31,129 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/favicon-32x32.png   
+ 
+2019-09-15 21:17:31,146 [6] INFO  App  
+ Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+ 
+2019-09-15 21:17:31,154 [6] INFO  App  
+ Request finished in 26.0621ms 200 image/png 
+ 
+2019-09-15 21:17:31,256 [15] INFO  App  
+ Request finished in 191.217ms 200 application/json;charset=utf-8 
+ 
+2019-09-15 21:17:45,876 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-09-15 21:17:45,951 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-09-15 21:17:46,001 [6] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-09-15 21:17:46,905 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-09-15 21:17:47,469 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-09-15 21:17:48,535 [6] INFO  App  
+ Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-09-15 21:17:48,805 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1883.4183ms. 
+ 
+2019-09-15 21:17:48,824 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-09-15 21:17:48,868 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 2854.5975ms 
+ 
+2019-09-15 21:17:48,883 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-09-15 21:17:48,895 [6] INFO  App  
+ Request finished in 3017.4484ms 200 application/json; charset=utf-8 
+ 

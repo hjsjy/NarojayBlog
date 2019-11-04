@@ -1,0 +1,1626 @@
+2019-10-31 20:49:32,480 [1] INFO  App  
+ User profile is available. Using 'C:\Users\黄杰\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-10-31 20:49:33,201 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger   
+ 
+2019-10-31 20:49:33,255 [7] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/index.html   
+ 
+2019-10-31 20:49:33,265 [6] INFO  App  
+ Request finished in 65.0366ms 301  
+ 
+2019-10-31 20:49:33,383 [7] INFO  App  
+ Request finished in 127.9999ms 200 text/html 
+ 
+2019-10-31 20:49:33,435 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/swagger-ui.css   
+ 
+2019-10-31 20:49:33,435 [10] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-10-31 20:49:33,440 [9] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/swagger-ui-bundle.js   
+ 
+2019-10-31 20:49:33,494 [10] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-10-31 20:49:33,495 [7] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-10-31 20:49:33,501 [7] INFO  App  
+ Request finished in 82.8476ms 200 text/css 
+ 
+2019-10-31 20:49:33,502 [10] INFO  App  
+ Request finished in 69.9462ms 200 application/javascript 
+ 
+2019-10-31 20:49:33,510 [9] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-10-31 20:49:33,513 [9] INFO  App  
+ Request finished in 82.6279ms 200 application/javascript 
+ 
+2019-10-31 20:49:33,800 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/v1/swagger.json   
+ 
+2019-10-31 20:49:33,822 [7] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/swagger/favicon-32x32.png   
+ 
+2019-10-31 20:49:33,827 [7] INFO  App  
+ Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+ 
+2019-10-31 20:49:33,829 [7] INFO  App  
+ Request finished in 8.7838ms 200 image/png 
+ 
+2019-10-31 20:49:33,954 [6] INFO  App  
+ Request finished in 154.0908ms 200 application/json;charset=utf-8 
+ 
+2019-10-31 20:50:19,393 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-10-31 20:50:19,463 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:50:19,486 [6] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 20:50:19,906 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 20:50:20,293 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 20:50:21,076 [6] INFO  App  
+ Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-10-31 20:50:21,300 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1389.2653ms. 
+ 
+2019-10-31 20:50:21,317 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-10-31 20:50:21,334 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 1835.78ms 
+ 
+2019-10-31 20:50:21,336 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:50:21,341 [6] INFO  App  
+ Request finished in 1948.0857ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 20:50:52,521 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-10-31 20:50:52,532 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 20:50:52,547 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:50:52,549 [6] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 20:50:52,592 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 20:50:52,597 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 20:50:52,631 [6] INFO  App  
+ Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-10-31 20:50:52,634 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 40.1504ms. 
+ 
+2019-10-31 20:50:52,638 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-10-31 20:50:52,641 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 81.9512ms 
+ 
+2019-10-31 20:50:52,644 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:50:52,646 [6] INFO  App  
+ Request finished in 125.2521ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 20:51:04,188 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-10-31 20:51:04,204 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 20:51:04,214 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:51:04,226 [6] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 20:51:04,265 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 20:51:04,268 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 20:51:04,285 [6] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-10-31 20:51:04,288 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.7941ms. 
+ 
+2019-10-31 20:51:04,293 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-10-31 20:51:04,297 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 67.1257ms 
+ 
+2019-10-31 20:51:04,301 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:51:04,307 [6] INFO  App  
+ Request finished in 117.1689ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 20:51:18,575 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-10-31 20:51:18,579 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 20:51:18,582 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:51:18,586 [6] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 20:51:18,607 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 20:51:18,610 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 20:51:18,628 [6] INFO  App  
+ Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-10-31 20:51:18,631 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.4706ms. 
+ 
+2019-10-31 20:51:18,634 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-10-31 20:51:18,636 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 47.6591ms 
+ 
+2019-10-31 20:51:18,639 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:51:18,641 [6] INFO  App  
+ Request finished in 66.4409ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 20:51:20,474 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-10-31 20:51:20,484 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 20:51:20,487 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:51:20,490 [6] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 20:51:20,513 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 20:51:20,517 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 20:51:20,536 [6] INFO  App  
+ Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-10-31 20:51:20,540 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.1136ms. 
+ 
+2019-10-31 20:51:20,543 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-10-31 20:51:20,556 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 53.7465ms 
+ 
+2019-10-31 20:51:20,558 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:51:20,561 [6] INFO  App  
+ Request finished in 87.7679ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 20:55:01,189 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 20:55:01,200 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:55:01,221 [6] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 20:55:01,246 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 20:55:01,249 [6] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 20:55:01,255 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 20:55:01,305 [6] INFO  App  
+ Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 20:55:01,310 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 60.6803ms. 
+ 
+2019-10-31 20:55:01,313 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 20:55:01,316 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 93.0319ms 
+ 
+2019-10-31 20:55:01,319 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:55:01,322 [6] INFO  App  
+ Request finished in 133.5592ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 20:55:12,667 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 20:55:12,670 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 20:55:12,676 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:55:12,679 [6] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 20:55:12,710 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 20:55:12,712 [6] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 20:55:12,715 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 20:55:12,732 [6] INFO  App  
+ Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 20:55:12,735 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22.5695ms. 
+ 
+2019-10-31 20:55:12,745 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 20:55:12,763 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 66.9909ms 
+ 
+2019-10-31 20:55:12,770 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:55:12,779 [6] INFO  App  
+ Request finished in 109.1304ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 20:55:23,451 [26] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 20:55:23,465 [26] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 20:55:23,471 [26] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:55:23,483 [26] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 20:55:23,511 [26] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 20:55:23,514 [26] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 20:55:23,516 [26] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 20:55:23,532 [26] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 20:55:23,535 [26] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.946ms. 
+ 
+2019-10-31 20:55:23,538 [26] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 20:55:23,541 [26] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 52.0692ms 
+ 
+2019-10-31 20:55:23,544 [26] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:55:23,547 [26] INFO  App  
+ Request finished in 96.0354ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 20:55:25,933 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 20:55:25,937 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 20:55:25,940 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:55:25,945 [6] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 20:55:25,966 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 20:55:25,969 [6] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 20:55:25,972 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 20:55:25,989 [6] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 20:55:25,992 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.1995ms. 
+ 
+2019-10-31 20:55:25,995 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 20:55:25,998 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 50.7579ms 
+ 
+2019-10-31 20:55:26,001 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:55:26,004 [6] INFO  App  
+ Request finished in 71.8116ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 20:55:28,443 [26] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 20:55:28,449 [26] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 20:55:28,461 [26] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:55:28,464 [26] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 20:55:28,489 [26] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 20:55:28,492 [26] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 20:55:28,495 [26] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 20:55:28,512 [26] INFO  App  
+ Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 20:55:28,514 [26] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22.5236ms. 
+ 
+2019-10-31 20:55:28,517 [26] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 20:55:28,521 [26] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 53.3913ms 
+ 
+2019-10-31 20:55:28,524 [26] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 20:55:28,526 [26] INFO  App  
+ Request finished in 84.6658ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:00:41,973 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:00:41,976 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:00:41,999 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:00:42,002 [6] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:00:42,027 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:00:42,032 [6] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:00:42,035 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:00:42,096 [6] INFO  App  
+ Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:00:42,099 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 67.5956ms. 
+ 
+2019-10-31 21:00:42,103 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:00:42,119 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 102.1086ms 
+ 
+2019-10-31 21:00:42,125 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:00:42,135 [6] INFO  App  
+ Request finished in 155.1358ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:00:45,948 [32] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:00:45,951 [32] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:00:45,956 [32] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:00:45,960 [32] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:00:45,984 [32] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:00:45,988 [32] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:00:45,991 [32] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:00:46,011 [32] INFO  App  
+ Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:00:46,013 [32] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25.9163ms. 
+ 
+2019-10-31 21:00:46,015 [32] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:00:46,022 [32] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 56.1809ms 
+ 
+2019-10-31 21:00:46,025 [32] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:00:46,028 [32] INFO  App  
+ Request finished in 80.9335ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:00:47,383 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:00:47,386 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:00:47,389 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:00:47,393 [6] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:00:47,415 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:00:47,417 [6] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:00:47,420 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:00:47,439 [6] INFO  App  
+ Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:00:47,442 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.5229ms. 
+ 
+2019-10-31 21:00:47,445 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:00:47,447 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 51.5503ms 
+ 
+2019-10-31 21:00:47,450 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:00:47,453 [6] INFO  App  
+ Request finished in 70.8125ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:00:52,784 [32] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:00:52,788 [32] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:00:52,794 [32] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:00:52,797 [32] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:00:52,819 [32] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:00:52,822 [32] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:00:52,826 [32] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:00:52,844 [32] INFO  App  
+ Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:00:52,847 [32] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.3373ms. 
+ 
+2019-10-31 21:00:52,849 [32] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:00:52,853 [32] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 52.9741ms 
+ 
+2019-10-31 21:00:52,855 [32] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:00:52,862 [32] INFO  App  
+ Request finished in 74.7651ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:00:59,151 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:00:59,165 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:00:59,169 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:00:59,174 [6] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:00:59,199 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:00:59,201 [6] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:00:59,204 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:00:59,221 [6] INFO  App  
+ Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:00:59,223 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.8692ms. 
+ 
+2019-10-31 21:00:59,226 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:00:59,229 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 51.7465ms 
+ 
+2019-10-31 21:00:59,233 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:00:59,236 [6] INFO  App  
+ Request finished in 85.304ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:01:01,055 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:01:01,059 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:01:01,062 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:01:01,064 [6] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:01:01,098 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:01:01,100 [6] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:01:01,103 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:01:01,124 [6] INFO  App  
+ Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:01:01,127 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 26.2721ms. 
+ 
+2019-10-31 21:01:01,130 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:01:01,134 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 65.761ms 
+ 
+2019-10-31 21:01:01,136 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:01:01,142 [6] INFO  App  
+ Request finished in 85.8704ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:28:15,702 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:28:15,712 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:28:15,731 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:28:15,734 [6] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:28:15,759 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:28:15,762 [6] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:28:15,765 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:28:15,829 [6] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:28:15,831 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 69.6691ms. 
+ 
+2019-10-31 21:28:15,834 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:28:15,843 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 99.7ms 
+ 
+2019-10-31 21:28:15,846 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:28:15,848 [6] INFO  App  
+ Request finished in 147.53ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:28:44,227 [38] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:28:44,236 [38] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:28:44,260 [38] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:28:44,263 [38] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:28:44,290 [38] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:28:44,293 [38] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:28:44,296 [38] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:28:44,313 [38] INFO  App  
+ Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:28:44,316 [38] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22.7551ms. 
+ 
+2019-10-31 21:28:44,318 [38] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:28:44,321 [38] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 55.0062ms 
+ 
+2019-10-31 21:28:44,323 [38] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:28:44,325 [38] INFO  App  
+ Request finished in 98.8969ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:31:46,670 [6] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:31:46,682 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:31:46,695 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:31:46,704 [6] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:31:46,729 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:31:46,739 [6] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:31:46,742 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:31:46,762 [6] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:31:46,775 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 32.4689ms. 
+ 
+2019-10-31 21:31:46,780 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:31:46,811 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 77.1909ms 
+ 
+2019-10-31 21:31:46,813 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:31:46,817 [6] INFO  App  
+ Request finished in 149.9175ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:39:25,590 [41] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:39:25,607 [41] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:39:25,628 [41] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:25,631 [41] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:39:25,656 [41] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:39:25,662 [41] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:39:25,666 [41] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:39:25,732 [41] INFO  App  
+ Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:39:25,734 [41] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 74.2884ms. 
+ 
+2019-10-31 21:39:25,737 [41] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:39:25,747 [41] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 106.2654ms 
+ 
+2019-10-31 21:39:25,749 [41] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:25,752 [41] INFO  App  
+ Request finished in 161.7076ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:39:30,631 [41] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:39:30,675 [41] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:39:30,684 [41] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:30,692 [41] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:39:30,719 [41] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:39:30,723 [41] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:39:30,727 [41] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:39:30,745 [41] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:39:30,748 [41] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25.0064ms. 
+ 
+2019-10-31 21:39:30,750 [41] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:39:30,774 [41] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 56.9244ms 
+ 
+2019-10-31 21:39:30,787 [41] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:30,793 [41] INFO  App  
+ Request finished in 158.9622ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:39:31,629 [47] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:39:31,632 [47] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:39:31,635 [47] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:31,639 [47] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:39:31,662 [47] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:39:31,666 [47] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:39:31,669 [47] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:39:31,684 [47] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:39:31,686 [47] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.5904ms. 
+ 
+2019-10-31 21:39:31,690 [47] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:39:31,694 [47] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 51.2109ms 
+ 
+2019-10-31 21:39:31,696 [47] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:31,698 [47] INFO  App  
+ Request finished in 70.3152ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:39:38,659 [41] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:39:38,664 [41] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:39:38,668 [41] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:38,674 [41] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:39:38,702 [41] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:39:38,709 [41] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:39:38,713 [41] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:39:38,728 [41] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:39:38,731 [41] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 26.3702ms. 
+ 
+2019-10-31 21:39:38,734 [41] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:39:38,738 [41] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 60.3737ms 
+ 
+2019-10-31 21:39:38,742 [41] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:38,747 [41] INFO  App  
+ Request finished in 84.8464ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:39:39,773 [43] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:39:39,777 [43] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:39:39,781 [43] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:39,784 [43] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:39:39,814 [43] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:39:39,816 [43] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:39:39,819 [43] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:39:39,835 [43] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:39:39,837 [43] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.0045ms. 
+ 
+2019-10-31 21:39:39,840 [43] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:39:39,843 [43] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 55.2783ms 
+ 
+2019-10-31 21:39:39,845 [43] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:39,851 [43] INFO  App  
+ Request finished in 75.9228ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:39:52,827 [41] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:39:52,831 [41] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:39:52,834 [41] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:52,838 [41] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:39:52,860 [41] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:39:52,862 [41] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:39:52,865 [41] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:39:52,881 [41] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:39:52,884 [41] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.3495ms. 
+ 
+2019-10-31 21:39:52,887 [41] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:39:52,889 [41] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 48.2045ms 
+ 
+2019-10-31 21:39:52,891 [41] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:39:52,894 [41] INFO  App  
+ Request finished in 66.8177ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:40:11,469 [43] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:40:11,473 [43] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:40:11,484 [43] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:40:11,494 [43] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:40:11,516 [43] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:40:11,518 [43] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:40:11,521 [43] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:40:11,536 [43] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:40:11,539 [43] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.2849ms. 
+ 
+2019-10-31 21:40:11,541 [43] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:40:11,546 [43] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 47.8126ms 
+ 
+2019-10-31 21:40:11,549 [43] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:40:11,551 [43] INFO  App  
+ Request finished in 81.4148ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:40:18,817 [41] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:40:18,824 [41] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:40:18,831 [41] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:40:18,837 [41] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:40:18,867 [41] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:40:18,870 [41] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:40:18,872 [41] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:40:18,891 [41] INFO  App  
+ Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:40:18,896 [41] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.0739ms. 
+ 
+2019-10-31 21:40:18,900 [41] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:40:18,906 [41] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 63.5047ms 
+ 
+2019-10-31 21:40:18,910 [41] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:40:18,913 [41] INFO  App  
+ Request finished in 96.8639ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:40:50,274 [41] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:40:50,283 [41] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:40:50,320 [41] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:40:50,324 [41] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:40:50,351 [41] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:40:50,354 [41] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:40:50,357 [41] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:40:50,375 [41] INFO  App  
+ Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:40:50,378 [41] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.4098ms. 
+ 
+2019-10-31 21:40:50,380 [41] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:40:50,386 [41] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 56.6636ms 
+ 
+2019-10-31 21:40:50,397 [41] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:40:50,400 [41] INFO  App  
+ Request finished in 126.1342ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:40:51,877 [41] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:40:51,880 [41] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:40:51,883 [41] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:40:51,885 [41] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:40:51,907 [41] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:40:51,910 [41] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:40:51,913 [41] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:40:51,931 [41] INFO  App  
+ Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:40:51,934 [41] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.0889ms. 
+ 
+2019-10-31 21:40:51,936 [41] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:40:51,939 [41] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 50.781ms 
+ 
+2019-10-31 21:40:51,942 [41] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:40:51,945 [41] INFO  App  
+ Request finished in 67.8738ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:40:53,446 [41] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:40:53,449 [41] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:40:53,452 [41] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:40:53,454 [41] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:40:53,478 [41] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:40:53,480 [41] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:40:53,483 [41] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:40:53,522 [41] INFO  App  
+ Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:40:53,525 [41] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 44.3839ms. 
+ 
+2019-10-31 21:40:53,528 [41] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:40:53,531 [41] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 73.1286ms 
+ 
+2019-10-31 21:40:53,533 [41] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:40:53,537 [41] INFO  App  
+ Request finished in 90.9373ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:41:07,708 [41] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:41:07,717 [41] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:41:07,735 [41] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:41:07,747 [41] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:41:07,783 [41] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:41:07,787 [41] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:41:07,791 [41] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:41:07,806 [41] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:41:07,809 [41] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 23.2274ms. 
+ 
+2019-10-31 21:41:07,815 [41] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:41:07,828 [41] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 67.4736ms 
+ 
+2019-10-31 21:41:07,832 [41] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:41:07,835 [41] INFO  App  
+ Request finished in 126.6269ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:41:32,627 [41] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:41:32,655 [41] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:41:32,669 [41] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:41:32,672 [41] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:41:32,695 [41] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:41:32,697 [41] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:41:32,700 [41] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:41:32,716 [41] INFO  App  
+ Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:41:32,719 [41] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.5996ms. 
+ 
+2019-10-31 21:41:32,723 [41] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:41:32,727 [41] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 51.9053ms 
+ 
+2019-10-31 21:41:32,729 [41] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:41:32,731 [41] INFO  App  
+ Request finished in 105.5311ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:47:36,681 [51] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:47:36,692 [51] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:47:36,705 [51] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:47:36,708 [51] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:47:36,731 [51] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:47:36,734 [51] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:47:36,737 [51] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:47:36,807 [51] INFO  App  
+ Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:47:36,809 [51] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 75.4878ms. 
+ 
+2019-10-31 21:47:36,812 [51] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:47:36,824 [51] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 105.0987ms 
+ 
+2019-10-31 21:47:36,826 [51] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:47:36,830 [51] INFO  App  
+ Request finished in 171.6532ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:47:40,560 [51] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:47:40,567 [51] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:47:40,591 [51] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:47:40,594 [51] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:47:40,621 [51] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:47:40,624 [51] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:47:40,626 [51] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:47:40,649 [51] INFO  App  
+ Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:47:40,651 [51] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 27.4174ms. 
+ 
+2019-10-31 21:47:40,653 [51] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:47:40,665 [51] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 58.6787ms 
+ 
+2019-10-31 21:47:40,668 [51] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:47:40,670 [51] INFO  App  
+ Request finished in 109.8018ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:47:48,768 [57] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:47:48,771 [57] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:47:48,779 [57] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:47:48,781 [57] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:47:48,807 [57] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:47:48,811 [57] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:47:48,813 [57] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:47:48,829 [57] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:47:48,831 [57] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.2752ms. 
+ 
+2019-10-31 21:47:48,834 [57] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:47:48,838 [57] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 53.0585ms 
+ 
+2019-10-31 21:47:48,840 [57] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:47:48,843 [57] INFO  App  
+ Request finished in 74.9712ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 21:47:52,936 [51] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 21:47:52,960 [51] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 21:47:52,962 [51] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:47:52,966 [51] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 21:47:52,997 [51] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 21:47:53,000 [51] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 21:47:53,003 [51] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 21:47:53,019 [51] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 21:47:53,022 [51] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.7818ms. 
+ 
+2019-10-31 21:47:53,031 [51] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 21:47:53,036 [51] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 64.9753ms 
+ 
+2019-10-31 21:47:53,039 [51] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 21:47:53,042 [51] INFO  App  
+ Request finished in 108.2525ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 22:00:20,819 [58] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-10-31 22:00:20,822 [58] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 22:00:20,839 [58] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 22:00:20,843 [58] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 22:00:20,869 [58] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 22:00:20,872 [58] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 22:00:20,985 [58] INFO  App  
+ Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-10-31 22:00:21,057 [58] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 124.6738ms. 
+ 
+2019-10-31 22:00:21,060 [58] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-10-31 22:00:21,065 [58] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 219.0994ms 
+ 
+2019-10-31 22:00:21,075 [58] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 22:00:21,077 [58] INFO  App  
+ Request finished in 265.351ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 22:00:23,802 [58] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/Articles   
+ 
+2019-10-31 22:00:23,808 [58] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-10-31 22:00:23,817 [58] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 22:00:23,825 [58] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 22:00:23,851 [58] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 22:00:23,855 [58] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 22:00:23,880 [58] INFO  App  
+ Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-10-31 22:00:23,882 [58] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 29.1012ms. 
+ 
+2019-10-31 22:00:23,885 [58] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[NarojayBlog.ManagerEntity.ArticleEntity, NarojayBlog.ManagerEntity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+ 
+2019-10-31 22:00:23,889 [58] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 59.8998ms 
+ 
+2019-10-31 22:00:23,892 [58] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-10-31 22:00:23,898 [58] INFO  App  
+ Request finished in 92.4742ms 200 application/json; charset=utf-8 
+ 
+2019-10-31 22:12:18,775 [58] INFO  App  
+ Request starting HTTP/2.0 GET https://localhost:44385/api/Article/WordsNumber   
+ 
+2019-10-31 22:12:18,783 [58] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 22:12:18,797 [58] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-10-31 22:12:18,821 [58] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-10-31 22:12:18,824 [58] INFO  App  
+ calculate the total number of article words 
+ 
+2019-10-31 22:12:18,827 [58] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-10-31 22:12:18,885 [58] INFO  App  
+ Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-10-31 22:12:18,888 [58] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 63.8023ms. 
+ 
+2019-10-31 22:12:18,890 [58] INFO  App  
+ Executing ObjectResult, writing value of type 'System.Int32'. 
+ 
+2019-10-31 22:12:18,894 [58] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 93.343ms 
+ 
+2019-10-31 22:12:18,903 [58] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-10-31 22:12:18,905 [58] INFO  App  
+ Request finished in 158.8068ms 200 application/json; charset=utf-8 
+ 

@@ -15,6 +15,7 @@ namespace NarojayBlog.Repository.IRepository
         TModel GetById(string id);
 
         IEnumerable<TModel> GetAll();
+        IEnumerable<TModel> GetPage(int page,int size);
 
     }
 }

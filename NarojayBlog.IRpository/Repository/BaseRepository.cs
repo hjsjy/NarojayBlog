@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 using NarojayBlog.DatabaseRepository.DbContext;
 using NarojayBlog.DatabaseRepository.Model;
 using NarojayBlog.Repository.IRepository;
-
 namespace NarojayBlog.Repository.Repository
 {
     public class BaseRepository<TModel> : IRepository<TModel> where TModel : BaseModel
@@ -63,6 +62,11 @@ namespace NarojayBlog.Repository.Repository
         public IEnumerable<TModel> GetAll()
         {
             return DbSet.ToList();
+        }
+
+        public IEnumerable<TModel> GetPage(int page,int size)
+        {
+            return DbSet.Skip((page-1)*size).Take(size).ToList();
         }
     }
 }
