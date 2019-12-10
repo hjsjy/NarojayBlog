@@ -16,8 +16,7 @@ namespace NarojayBlog.Webapi.Controllers
         [HttpPost("values")]
         public ActionResult Get(ArticleAddViewModel view)
         {
-            List<string> list = null;
-            return Ok(list);
+            return Ok(new List<string>());
         }
 
         public ValuesController(IMapper mapper) : base(mapper)
