@@ -1,0 +1,921 @@
+2019-12-09 16:35:58,438 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-09 16:36:00,474 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-09 16:36:00,514 [11] INFO  App  
+ Request finished in 41.4293ms 301  
+ 
+2019-12-09 16:36:00,521 [9] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 16:36:00,619 [9] INFO  App  
+ Request finished in 98.3211ms 200 text/html 
+ 
+2019-12-09 16:36:00,685 [9] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 16:36:00,707 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-09 16:36:00,711 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-09 16:36:00,738 [9] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 16:36:00,744 [6] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:36:00,748 [6] INFO  App  
+ Request finished in 36.507ms 200 application/javascript 
+ 
+2019-12-09 16:36:00,750 [9] INFO  App  
+ Request finished in 64.9337ms 200 text/css 
+ 
+2019-12-09 16:36:00,778 [9] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:36:00,783 [9] INFO  App  
+ Request finished in 76.6562ms 200 application/javascript 
+ 
+2019-12-09 16:36:00,924 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 16:36:01,078 [10] INFO  App  
+ Request finished in 154.8092ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 16:39:54,911 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-09 16:39:56,861 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-09 16:39:56,907 [12] INFO  App  
+ Request finished in 46.5887ms 301  
+ 
+2019-12-09 16:39:56,916 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 16:39:57,009 [6] INFO  App  
+ Request finished in 92.7268ms 200 text/html 
+ 
+2019-12-09 16:39:57,073 [14] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 16:39:57,094 [15] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-09 16:39:57,096 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-09 16:39:57,119 [14] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 16:39:57,123 [14] INFO  App  
+ Request finished in 50.9189ms 200 text/css 
+ 
+2019-12-09 16:39:57,139 [6] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:39:57,150 [6] INFO  App  
+ Request finished in 49.3021ms 200 application/javascript 
+ 
+2019-12-09 16:39:57,162 [10] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:39:57,167 [10] INFO  App  
+ Request finished in 73.7323ms 200 application/javascript 
+ 
+2019-12-09 16:39:57,326 [9] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 16:39:57,489 [9] INFO  App  
+ Request finished in 160.9796ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 16:40:02,326 [15] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 16:40:02,332 [15] INFO  App  
+ Request finished in 4.7667ms 200 text/html 
+ 
+2019-12-09 16:40:02,383 [9] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-09 16:40:02,384 [7] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 16:40:02,387 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-09 16:40:02,398 [16] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 16:40:02,415 [16] INFO  App  
+ Request finished in 24.7709ms 200 text/css 
+ 
+2019-12-09 16:40:02,422 [14] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:40:02,428 [14] INFO  App  
+ Request finished in 41.7921ms 200 application/javascript 
+ 
+2019-12-09 16:40:02,439 [7] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:40:02,443 [7] INFO  App  
+ Request finished in 61.999ms 200 application/javascript 
+ 
+2019-12-09 16:40:02,584 [7] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 16:40:02,590 [7] INFO  App  
+ Request finished in 4.8157ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 16:40:35,202 [7] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 16:40:35,220 [7] INFO  App  
+ Request finished in 17.8766ms 200 text/html 
+ 
+2019-12-09 16:40:35,245 [14] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 16:40:35,250 [14] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 16:40:35,253 [14] INFO  App  
+ Request finished in 8.3557ms 200 text/css 
+ 
+2019-12-09 16:40:35,345 [14] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 16:40:35,354 [14] INFO  App  
+ Request finished in 6.3292ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 16:40:35,364 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/favicon-32x32.png   
+ 
+2019-12-09 16:40:35,368 [6] INFO  App  
+ Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+ 
+2019-12-09 16:40:35,371 [6] INFO  App  
+ Request finished in 16.4235ms 200 image/png 
+ 
+2019-12-09 16:40:46,541 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-09 16:40:48,457 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-09 16:40:48,495 [11] INFO  App  
+ Request finished in 38.9756ms 301  
+ 
+2019-12-09 16:40:48,505 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 16:40:48,603 [6] INFO  App  
+ Request finished in 98.7452ms 200 text/html 
+ 
+2019-12-09 16:40:48,628 [13] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 16:40:48,660 [18] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-09 16:40:48,662 [15] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-09 16:40:48,678 [13] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 16:40:48,682 [18] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:40:48,688 [13] INFO  App  
+ Request finished in 56.2788ms 200 text/css 
+ 
+2019-12-09 16:40:48,699 [18] INFO  App  
+ Request finished in 28.2588ms 200 application/javascript 
+ 
+2019-12-09 16:40:48,723 [6] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:40:48,730 [6] INFO  App  
+ Request finished in 69.6926ms 200 application/javascript 
+ 
+2019-12-09 16:40:48,894 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 16:40:49,058 [6] INFO  App  
+ Request finished in 162.5005ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 16:41:09,606 [18] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 16:41:09,624 [18] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 16:41:09,669 [18] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:41:09,715 [18] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 16:41:09,780 [18] INFO  App  
+ Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+ 
+2019-12-09 16:41:09,795 [18] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 74.4776ms 
+ 
+2019-12-09 16:41:09,799 [18] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:41:09,802 [18] INFO  App  
+ Request finished in 195.9804ms 400 application/problem+json; charset=utf-8 
+ 
+2019-12-09 16:41:34,326 [14] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 16:41:34,329 [14] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 16:41:34,351 [14] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:41:34,354 [14] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 16:41:34,360 [14] INFO  App  
+ Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+ 
+2019-12-09 16:41:34,363 [14] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 5.8465ms 
+ 
+2019-12-09 16:41:34,366 [14] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:41:34,369 [14] INFO  App  
+ Request finished in 43.3227ms 400 application/problem+json; charset=utf-8 
+ 
+2019-12-09 16:41:35,021 [14] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 16:41:35,023 [14] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 16:41:35,029 [14] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:41:35,033 [14] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 16:41:35,036 [14] INFO  App  
+ Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+ 
+2019-12-09 16:41:35,039 [14] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 3.6244ms 
+ 
+2019-12-09 16:41:35,043 [14] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:41:35,047 [14] INFO  App  
+ Request finished in 26.0182ms 400 application/problem+json; charset=utf-8 
+ 
+2019-12-09 16:41:43,827 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-09 16:41:45,761 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-09 16:41:45,799 [11] INFO  App  
+ Request finished in 39.0161ms 301  
+ 
+2019-12-09 16:41:45,807 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 16:41:45,902 [6] INFO  App  
+ Request finished in 94.5769ms 200 text/html 
+ 
+2019-12-09 16:41:45,926 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 16:41:45,947 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-09 16:41:45,949 [7] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-09 16:41:45,977 [7] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:41:45,982 [7] INFO  App  
+ Request finished in 31.5474ms 200 application/javascript 
+ 
+2019-12-09 16:41:46,001 [12] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 16:41:46,005 [12] INFO  App  
+ Request finished in 79.9384ms 200 text/css 
+ 
+2019-12-09 16:41:46,023 [9] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:41:46,031 [9] INFO  App  
+ Request finished in 84.1606ms 200 application/javascript 
+ 
+2019-12-09 16:41:46,201 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 16:41:46,349 [6] INFO  App  
+ Request finished in 147.626ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 16:41:52,638 [17] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 16:41:52,645 [17] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 16:41:52,685 [17] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:41:52,721 [17] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 16:41:52,771 [17] INFO  App  
+ Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+ 
+2019-12-09 16:41:52,788 [17] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 60.8889ms 
+ 
+2019-12-09 16:41:52,792 [17] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:41:52,796 [17] INFO  App  
+ Request finished in 157.8142ms 400 application/problem+json; charset=utf-8 
+ 
+2019-12-09 16:42:25,897 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-09 16:42:28,109 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-09 16:42:28,154 [6] INFO  App  
+ Request finished in 45.2269ms 301  
+ 
+2019-12-09 16:42:28,164 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 16:42:28,273 [10] INFO  App  
+ Request finished in 109.2923ms 200 text/html 
+ 
+2019-12-09 16:42:28,343 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 16:42:28,363 [15] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-09 16:42:28,364 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-09 16:42:28,385 [6] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:42:28,390 [6] INFO  App  
+ Request finished in 24.4697ms 200 application/javascript 
+ 
+2019-12-09 16:42:28,405 [11] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 16:42:28,411 [11] INFO  App  
+ Request finished in 67.6044ms 200 text/css 
+ 
+2019-12-09 16:42:28,429 [9] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:42:28,436 [9] INFO  App  
+ Request finished in 73.0606ms 200 application/javascript 
+ 
+2019-12-09 16:42:28,592 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 16:42:28,756 [6] INFO  App  
+ Request finished in 164.2178ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 16:42:34,615 [10] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 16:42:34,621 [10] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 16:42:34,660 [10] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:42:34,694 [10] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 16:42:34,750 [10] INFO  App  
+ Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+ 
+2019-12-09 16:42:34,767 [10] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 66.8132ms 
+ 
+2019-12-09 16:42:34,771 [10] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:42:34,775 [10] INFO  App  
+ Request finished in 160.0192ms 400 application/problem+json; charset=utf-8 
+ 
+2019-12-09 16:42:50,235 [10] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 16:42:50,240 [10] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 16:42:50,255 [10] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:42:50,274 [10] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 16:42:50,280 [10] INFO  App  
+ Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+ 
+2019-12-09 16:42:50,284 [10] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 6.0254ms 
+ 
+2019-12-09 16:42:50,288 [10] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:42:50,291 [10] INFO  App  
+ Request finished in 55.5363ms 400 application/problem+json; charset=utf-8 
+ 
+2019-12-09 16:43:00,680 [7] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 16:43:00,684 [7] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 16:43:00,688 [7] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:43:00,691 [7] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 16:43:00,700 [7] INFO  App  
+ Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+ 
+2019-12-09 16:43:00,704 [7] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 8.976ms 
+ 
+2019-12-09 16:43:00,708 [7] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:43:00,713 [7] INFO  App  
+ Request finished in 31.6794ms 400 application/problem+json; charset=utf-8 
+ 
+2019-12-09 16:53:54,400 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-09 16:54:05,246 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-09 16:54:06,388 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-09 16:54:06,419 [12] INFO  App  
+ Request finished in 31.9424ms 301  
+ 
+2019-12-09 16:54:06,427 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 16:54:06,522 [6] INFO  App  
+ Request finished in 94.7298ms 200 text/html 
+ 
+2019-12-09 16:54:06,562 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 16:54:06,604 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-09 16:54:06,606 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-09 16:54:06,641 [11] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 16:54:06,643 [6] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:54:06,647 [11] INFO  App  
+ Request finished in 86.992ms 200 text/css 
+ 
+2019-12-09 16:54:06,651 [6] INFO  App  
+ Request finished in 46.2709ms 200 application/javascript 
+ 
+2019-12-09 16:54:06,666 [7] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:54:06,674 [7] INFO  App  
+ Request finished in 70.7556ms 200 application/javascript 
+ 
+2019-12-09 16:54:06,831 [7] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 16:54:06,995 [7] INFO  App  
+ Request finished in 162.9301ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 16:54:07,578 [9] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-09 16:54:07,581 [9] INFO  App  
+ Request finished in 3.5691ms 301  
+ 
+2019-12-09 16:54:07,648 [9] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 16:54:07,653 [9] INFO  App  
+ Request finished in 4.9269ms 200 text/html 
+ 
+2019-12-09 16:54:07,702 [7] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 16:54:07,707 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-09 16:54:07,727 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-09 16:54:07,748 [10] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 16:54:07,759 [10] INFO  App  
+ Request finished in 54.8297ms 200 text/css 
+ 
+2019-12-09 16:54:07,769 [9] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:54:07,778 [9] INFO  App  
+ Request finished in 75.7487ms 200 application/javascript 
+ 
+2019-12-09 16:54:07,807 [19] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:54:07,814 [19] INFO  App  
+ Request finished in 109.5167ms 200 application/javascript 
+ 
+2019-12-09 16:54:08,007 [9] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 16:54:08,014 [9] INFO  App  
+ Request finished in 5.5621ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 16:54:23,846 [13] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 202 
+ 
+2019-12-09 16:54:23,863 [13] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 16:54:23,908 [13] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:54:23,943 [13] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 16:54:31,124 [13] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-12-09 16:54:32,818 [13] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1688.9872ms. 
+ 
+2019-12-09 16:54:34,061 [13] INFO  App  
+ Executing ObjectResult, writing value of type 'NarojayBlog.Webapi.Filters.BaseResultModel'. 
+ 
+2019-12-09 16:54:34,074 [13] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 10126.3965ms 
+ 
+2019-12-09 16:54:34,078 [13] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:54:34,081 [13] INFO  App  
+ Request finished in 10234.8474ms 200 application/json; charset=utf-8 
+ 
+2019-12-09 16:55:34,666 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-09 16:55:37,073 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-09 16:55:37,114 [11] INFO  App  
+ Request finished in 41.2336ms 301  
+ 
+2019-12-09 16:55:37,122 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 16:55:37,222 [6] INFO  App  
+ Request finished in 99.4988ms 200 text/html 
+ 
+2019-12-09 16:55:37,283 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 16:55:37,309 [7] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-09 16:55:37,312 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-09 16:55:37,358 [10] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:55:37,361 [11] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 16:55:37,363 [10] INFO  App  
+ Request finished in 50.4372ms 200 application/javascript 
+ 
+2019-12-09 16:55:37,366 [11] INFO  App  
+ Request finished in 85.6197ms 200 text/css 
+ 
+2019-12-09 16:55:37,379 [9] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-09 16:55:37,384 [9] INFO  App  
+ Request finished in 76.0794ms 200 application/javascript 
+ 
+2019-12-09 16:55:37,549 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 16:55:37,714 [12] INFO  App  
+ Request finished in 164.5167ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 16:55:44,256 [17] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 16:55:44,262 [17] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 16:55:44,304 [17] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:55:44,338 [17] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 16:55:51,418 [17] INFO  App  
+ Executing ObjectResult, writing value of type 'NarojayBlog.Webapi.Filters.BaseResultModel'. 
+ 
+2019-12-09 16:55:53,216 [17] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 8872.2013ms 
+ 
+2019-12-09 16:55:53,219 [17] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 16:55:53,224 [17] INFO  App  
+ Request finished in 8966.7815ms 200 application/json; charset=utf-8 
+ 
+2019-12-09 17:00:12,244 [17] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 17:00:12,248 [17] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 17:00:12,262 [17] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:00:12,279 [17] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 17:00:38,697 [17] INFO  App  
+ Executing ObjectResult, writing value of type 'NarojayBlog.Webapi.Filters.BaseResultModel'. 
+ 
+2019-12-09 17:00:38,701 [17] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 26418.0785ms 
+ 
+2019-12-09 17:00:38,725 [17] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:00:38,729 [17] INFO  App  
+ Request finished in 26512.6429ms 200 application/json; charset=utf-8 
+ 
+2019-12-09 17:02:04,194 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-09 17:02:06,227 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-09 17:02:06,289 [10] INFO  App  
+ Request finished in 64.8995ms 301  
+ 
+2019-12-09 17:02:06,300 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 17:02:06,404 [11] INFO  App  
+ Request finished in 103.7911ms 200 text/html 
+ 
+2019-12-09 17:02:06,494 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 17:02:06,515 [16] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-09 17:02:06,518 [15] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-09 17:02:06,563 [10] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 17:02:06,592 [10] INFO  App  
+ Request finished in 89.0082ms 200 text/css 
+ 
+2019-12-09 17:02:06,597 [12] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-09 17:02:06,606 [10] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-09 17:02:06,613 [12] INFO  App  
+ Request finished in 95.2951ms 200 application/javascript 
+ 
+2019-12-09 17:02:06,616 [10] INFO  App  
+ Request finished in 98.2804ms 200 application/javascript 
+ 
+2019-12-09 17:02:06,763 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 17:02:06,929 [10] INFO  App  
+ Request finished in 161.9464ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 17:02:14,646 [14] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 17:02:14,652 [14] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 17:02:14,691 [14] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:02:14,726 [14] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 17:02:41,996 [14] INFO  App  
+ Executing ObjectResult, writing value of type 'NarojayBlog.Webapi.Filters.BaseResultModel'. 
+ 
+2019-12-09 17:02:42,026 [14] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 27294.1257ms 
+ 
+2019-12-09 17:02:42,040 [14] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:02:42,064 [14] INFO  App  
+ Request finished in 27407.9691ms 200 application/json; charset=utf-8 
+ 
+2019-12-09 17:04:59,316 [17] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 17:04:59,332 [17] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 17:04:59,349 [17] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:04:59,353 [17] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 17:05:18,971 [17] INFO  App  
+ Executing ObjectResult, writing value of type 'NarojayBlog.Webapi.Filters.BaseResultModel'. 
+ 
+2019-12-09 17:05:21,388 [17] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 22032.0761ms 
+ 
+2019-12-09 17:05:21,403 [17] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:05:21,418 [17] INFO  App  
+ Request finished in 22091.1234ms 200 application/json; charset=utf-8 
+ 
+2019-12-09 17:06:40,830 [20] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 17:06:40,835 [20] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 17:06:40,858 [20] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:06:40,863 [20] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 17:06:44,152 [20] INFO  App  
+ Executing ObjectResult, writing value of type 'NarojayBlog.Webapi.Filters.BaseResultModel'. 
+ 
+2019-12-09 17:06:45,884 [20] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 5016.7897ms 
+ 
+2019-12-09 17:06:45,897 [20] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:06:45,900 [20] INFO  App  
+ Request finished in 5079.5683ms 200 application/json; charset=utf-8 
+ 
+2019-12-09 17:32:20,386 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-09 17:32:22,545 [13] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-09 17:32:22,594 [13] INFO  App  
+ Request finished in 49.5286ms 301  
+ 
+2019-12-09 17:32:22,604 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-09 17:32:22,704 [6] INFO  App  
+ Request finished in 100.1689ms 200 text/html 
+ 
+2019-12-09 17:32:22,774 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-09 17:32:22,789 [14] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-09 17:32:22,792 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-09 17:32:22,824 [11] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-09 17:32:22,827 [11] INFO  App  
+ Request finished in 35.4442ms 200 application/javascript 
+ 
+2019-12-09 17:32:22,832 [10] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-09 17:32:22,837 [10] INFO  App  
+ Request finished in 65.7389ms 200 text/css 
+ 
+2019-12-09 17:32:22,846 [14] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-09 17:32:22,850 [14] INFO  App  
+ Request finished in 60.8626ms 200 application/javascript 
+ 
+2019-12-09 17:32:23,014 [14] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-09 17:32:23,162 [14] INFO  App  
+ Request finished in 151.1117ms 200 application/json;charset=utf-8 
+ 
+2019-12-09 17:32:32,575 [6] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 202 
+ 
+2019-12-09 17:32:32,580 [6] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 17:32:32,626 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:32:32,660 [6] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 17:32:38,500 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-12-09 17:32:40,480 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1974.6994ms. 
+ 
+2019-12-09 17:32:45,775 [6] INFO  App  
+ Executing ObjectResult, writing value of type 'NarojayBlog.Webapi.Filters.BaseResultModel'. 
+ 
+2019-12-09 17:32:48,374 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 15709.0226ms 
+ 
+2019-12-09 17:32:48,378 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:32:48,382 [6] INFO  App  
+ Request finished in 15811.3506ms 200 application/json; charset=utf-8 
+ 
+2019-12-09 17:33:10,894 [14] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 196 
+ 
+2019-12-09 17:33:10,900 [14] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-09 17:33:10,925 [14] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:33:10,928 [14] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-09 17:33:15,788 [14] INFO  App  
+ Executing ObjectResult, writing value of type 'NarojayBlog.Webapi.Filters.BaseResultModel'. 
+ 
+2019-12-09 17:33:18,161 [14] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 7229.7888ms 
+ 
+2019-12-09 17:33:18,165 [14] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-09 17:33:18,169 [14] INFO  App  
+ Request finished in 7274.3011ms 200 application/json; charset=utf-8 
+ 

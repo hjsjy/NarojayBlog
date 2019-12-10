@@ -4,17 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using NarojayBlog.ViewModel;
+using NarojayBlog.Webapi.Filters;
 
 namespace NarojayBlog.Webapi.Controllers
 {
-
+  
     public class ValuesController : BaseController
     {
         // GET api/values
-        [HttpGet("values")]
-        public ActionResult<IEnumerable<string>> Get()
+        [HttpPost("values")]
+        public ActionResult Get(ArticleAddViewModel view)
         {
-            return new[] {"value1", "value2"};
+            List<string> list = null;
+            return Ok(list);
         }
 
         public ValuesController(IMapper mapper) : base(mapper)

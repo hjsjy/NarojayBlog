@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NarojayBlog.DatabaseRepository.DbContext;
+using NarojayBlog.Webapi.Filters;
 using NarojayBlog.Webapi.Helper;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerUI;
@@ -22,8 +23,11 @@ namespace NarojayBlog.Webapi
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
+            services.AddMvc(options =>
+            {
+                options.Filters.Add<ValidateModelAttribute>();
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.Configure<ApiBehaviorOptions>(options => options.SuppressModelStateInvalidFilter = true);
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new Info
@@ -40,7 +44,6 @@ namespace NarojayBlog.Webapi
             services.AddRepositories();
             services.AddCors();
         }
-
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -59,6 +62,7 @@ namespace NarojayBlog.Webapi
             app.UseSwagger();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseHttpsRedirection();
+            app.UseMiddleware<ErrorHandlingMiddleware>();
             app.UseMvc();
         }
     }
