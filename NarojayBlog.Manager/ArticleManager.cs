@@ -63,5 +63,15 @@ namespace NarojayBlog.Manager
             }
             return Mapper.Map<IEnumerable<ArticleEntity>>(articleEntities);
         }
+
+        public string TestException(string id)
+        {
+            if (id == "测试")
+            {
+                throw new System.NotSupportedException("asdasdasd");
+            }
+
+            return "返回";
+        }
     }
 }

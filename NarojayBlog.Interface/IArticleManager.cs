@@ -13,6 +13,7 @@ namespace NarojayBlog.IManager
         int CalculateArticleWordsNumber();
         int GetArticleNumber();
         IEnumerable<ArticleEntity> GetArticles(int page, int size);
+        string TestException(string id);
 
     }
 }

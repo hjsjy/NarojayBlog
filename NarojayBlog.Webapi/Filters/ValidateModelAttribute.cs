@@ -22,21 +22,20 @@ namespace NarojayBlog.Webapi.Filters
 
         public override void OnActionExecuted(ActionExecutedContext context)
         {
-            if (context.Result is ValidationFailedResult)
-            {
-                var objectResult = context.Result as ObjectResult;
-                context.Result = objectResult;
-            }
-            else if (context.Result is ObjectResult result && result.Value == null)
-            {
-                 context.Result = new NotFoundObjectResult(new BaseResultModel(code: StatusCodes.Status404NotFound, result: result?.Value));
-            }
-            else
-            {
-                 var objectResult = context.Result as ObjectResult;
-                context.Result = new OkObjectResult(new BaseResultModel(code: objectResult?.StatusCode, result: objectResult?.Value));
-            }
-        
+//            if (context.Result is ValidationFailedResult)
+//            {
+//                var objectResult = context.Result as ObjectResult;
+//                context.Result = objectResult;
+//            }
+////            else if (context.Result is ObjectResult result && result.Value == null)
+////            {
+////                 context.Result = new NotFoundObjectResult(new BaseResultModel(code: StatusCodes.Status404NotFound, result: result?.Value));
+////            }
+//            else
+//            {
+//                 var objectResult = context.Result as ObjectResult;
+//                context.Result = new OkObjectResult(new BaseResultModel(code: objectResult?.StatusCode,message:"success",result: objectResult?.Value));
+//            }
         }
 
 
