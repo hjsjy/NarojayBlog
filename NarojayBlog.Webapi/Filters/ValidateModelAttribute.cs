@@ -27,12 +27,16 @@ namespace NarojayBlog.Webapi.Filters
                 var objectResult = context.Result as ObjectResult;
                 context.Result = objectResult;
             }
+            else if (context.Result is ObjectResult result && result.Value == null)
+            {
+                 context.Result = new NotFoundObjectResult(new BaseResultModel(code: StatusCodes.Status404NotFound, result: result?.Value));
+            }
             else
             {
-                var objectResult = context.Result as ObjectResult;
-             
+                 var objectResult = context.Result as ObjectResult;
                 context.Result = new OkObjectResult(new BaseResultModel(code: objectResult?.StatusCode, result: objectResult?.Value));
             }
+        
         }
 
 
