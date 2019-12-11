@@ -17,7 +17,7 @@ namespace NarojayBlog.Webapi.Controllers
         public ActionResult Get(ArticleAddViewModel view)
         {
             List<string> list = null;
-            return Ok(list);
+           throw  new NullReferenceException("用户不存在");
         }
 
         public ValuesController(IMapper mapper) : base(mapper)

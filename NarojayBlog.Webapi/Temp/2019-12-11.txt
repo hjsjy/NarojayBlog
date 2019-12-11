@@ -1,0 +1,300 @@
+2019-12-11 10:15:18,018 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-11 10:15:20,381 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-11 10:15:20,422 [6] INFO  App  
+ Request finished in 41.9776ms 301  
+ 
+2019-12-11 10:15:20,430 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-11 10:15:20,634 [12] INFO  App  
+ Request finished in 202.9559ms 200 text/html 
+ 
+2019-12-11 10:15:20,712 [9] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-11 10:15:20,754 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-11 10:15:20,757 [15] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-11 10:15:20,777 [9] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-11 10:15:20,780 [9] INFO  App  
+ Request finished in 68.7508ms 200 text/css 
+ 
+2019-12-11 10:15:20,796 [15] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-11 10:15:20,800 [15] INFO  App  
+ Request finished in 41.7666ms 200 application/javascript 
+ 
+2019-12-11 10:15:20,822 [11] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-11 10:15:20,828 [11] INFO  App  
+ Request finished in 73.9126ms 200 application/javascript 
+ 
+2019-12-11 10:15:20,985 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-11 10:15:21,153 [6] INFO  App  
+ Request finished in 168.0506ms 200 application/json;charset=utf-8 
+ 
+2019-12-11 10:15:24,629 [14] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 202 
+ 
+2019-12-11 10:15:24,636 [14] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-11 10:15:24,680 [14] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-11 10:15:24,716 [14] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-11 10:15:34,254 [14] INFO  App  
+ Executing ObjectResult, writing value of type 'NarojayBlog.Webapi.Filters.ValidateModelAttribute+ValidationFailedResultModel'. 
+ 
+2019-12-11 10:15:34,271 [14] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 9548.3084ms 
+ 
+2019-12-11 10:15:34,274 [14] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-11 10:15:34,278 [14] INFO  App  
+ Request finished in 9647.9806ms 400 application/json; charset=utf-8 
+ 
+2019-12-11 10:15:57,745 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-11 10:15:59,657 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-11 10:15:59,691 [12] INFO  App  
+ Request finished in 35.0931ms 301  
+ 
+2019-12-11 10:15:59,700 [7] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-11 10:15:59,892 [7] INFO  App  
+ Request finished in 193.3782ms 200 text/html 
+ 
+2019-12-11 10:15:59,966 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-11 10:15:59,994 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-11 10:15:59,997 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-11 10:16:00,030 [12] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-11 10:16:00,035 [12] INFO  App  
+ Request finished in 66.8023ms 200 text/css 
+ 
+2019-12-11 10:16:00,044 [6] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-11 10:16:00,051 [6] INFO  App  
+ Request finished in 50.0359ms 200 application/javascript 
+ 
+2019-12-11 10:16:00,064 [6] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-11 10:16:00,074 [6] INFO  App  
+ Request finished in 79.2779ms 200 application/javascript 
+ 
+2019-12-11 10:16:00,251 [11] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-11 10:16:00,420 [11] INFO  App  
+ Request finished in 166.6685ms 200 application/json;charset=utf-8 
+ 
+2019-12-11 10:16:04,899 [7] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 202 
+ 
+2019-12-11 10:16:04,907 [7] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-11 10:16:04,960 [7] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-11 10:16:04,992 [7] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-11 10:16:05,145 [7] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-12-11 10:16:16,886 [7] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 11888.7951ms 
+ 
+2019-12-11 10:16:16,895 [7] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-11 10:16:19,229 [7] ERROR App  
+ Something went wrong: System.NullReferenceException: 用户不存在
+   at NarojayBlog.Webapi.Controllers.ValuesController.Get(ArticleAddViewModel view) in C:\Users\jehg\source\repos\hjsjy\NarojayBlog\NarojayBlog.Webapi\Controllers\ValuesController.cs:line 20
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at NarojayBlog.Webapi.Filters.ErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\jehg\source\repos\hjsjy\NarojayBlog\NarojayBlog.Webapi\Filters\ErrorHandlingMiddleware.cs:line 25 
+ 
+2019-12-11 10:16:26,118 [7] INFO  App  
+ Request finished in 21219.4799ms 500 application/json 
+ 
+2019-12-11 10:19:46,407 [1] INFO  App  
+ User profile is available. Using 'C:\Users\jehg\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-11 10:19:48,503 [9] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-11 10:19:48,536 [9] INFO  App  
+ Request finished in 33.443ms 301  
+ 
+2019-12-11 10:19:48,543 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-11 10:19:48,768 [6] INFO  App  
+ Request finished in 224.8957ms 200 text/html 
+ 
+2019-12-11 10:19:48,837 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-11 10:19:48,881 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-11 10:19:48,883 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-11 10:19:48,900 [12] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-11 10:19:48,907 [12] INFO  App  
+ Request finished in 23.9389ms 200 application/javascript 
+ 
+2019-12-11 10:19:48,916 [6] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-11 10:19:48,922 [6] INFO  App  
+ Request finished in 82.1167ms 200 text/css 
+ 
+2019-12-11 10:19:48,933 [9] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-11 10:19:48,941 [9] INFO  App  
+ Request finished in 59.9295ms 200 application/javascript 
+ 
+2019-12-11 10:19:49,088 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-11 10:19:49,256 [10] INFO  App  
+ Request finished in 165.9994ms 200 application/json;charset=utf-8 
+ 
+2019-12-11 10:19:53,714 [15] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 202 
+ 
+2019-12-11 10:19:53,720 [15] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-11 10:19:53,761 [15] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-11 10:19:53,792 [15] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-11 10:19:53,949 [15] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-12-11 10:20:02,143 [15] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 8345.6807ms 
+ 
+2019-12-11 10:20:02,146 [15] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-11 10:20:02,219 [15] ERROR App  
+ Something went wrong: System.NullReferenceException: 用户不存在
+   at NarojayBlog.Webapi.Controllers.ValuesController.Get(ArticleAddViewModel view) in C:\Users\jehg\source\repos\hjsjy\NarojayBlog\NarojayBlog.Webapi\Controllers\ValuesController.cs:line 20
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at NarojayBlog.Webapi.Filters.ErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\jehg\source\repos\hjsjy\NarojayBlog\NarojayBlog.Webapi\Filters\ErrorHandlingMiddleware.cs:line 25 
+ 
+2019-12-11 10:20:54,314 [15] INFO  App  
+ Request finished in 60599.9053ms 500 application/json 
+ 
+2019-12-11 10:20:59,711 [18] INFO  App  
+ Request starting HTTP/1.1 POST https://localhost:8087/api/Values/values application/json-patch+json 202 
+ 
+2019-12-11 10:20:59,714 [18] INFO  App  
+ CORS policy execution successful. 
+ 
+2019-12-11 10:20:59,720 [18] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-11 10:20:59,724 [18] INFO  App  
+ Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Get(NarojayBlog.ViewModel.ArticleAddViewModel) on controller NarojayBlog.Webapi.Controllers.ValuesController (NarojayBlog.Webapi). 
+ 
+2019-12-11 10:20:59,753 [18] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-12-11 10:21:56,424 [18] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi) in 56696.1216ms 
+ 
+2019-12-11 10:21:56,428 [18] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ValuesController.Get (NarojayBlog.Webapi)' 
+ 
+2019-12-11 10:21:56,477 [18] ERROR App  
+ Something went wrong: System.NullReferenceException: 用户不存在
+   at NarojayBlog.Webapi.Controllers.ValuesController.Get(ArticleAddViewModel view) in C:\Users\jehg\source\repos\hjsjy\NarojayBlog\NarojayBlog.Webapi\Controllers\ValuesController.cs:line 20
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at NarojayBlog.Webapi.Filters.ErrorHandlingMiddleware.Invoke(HttpContext context) in C:\Users\jehg\source\repos\hjsjy\NarojayBlog\NarojayBlog.Webapi\Filters\ErrorHandlingMiddleware.cs:line 25 
+ 
+2019-12-11 10:21:59,031 [18] INFO  App  
+ Request finished in 59319.7772ms 500 application/json 
+ 

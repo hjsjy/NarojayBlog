@@ -33,6 +33,7 @@ namespace NarojayBlog.Webapi.Filters
 
         private static Task HandleExceptionAsync(HttpContext context, Exception ex)
         {
+            var responseStatusCode = context.Response.StatusCode;
             var code = HttpStatusCode.InternalServerError; // 500 if unexpected
             var tes = new CustomExceptionResult((int) code, ex).Value;
             var result = JsonConvert.SerializeObject(tes);
