@@ -21,7 +21,7 @@
     {
         Success = 1,
         Fail = 0,
-        ConfirmIsContinue = 2,
+        FriendlyError = 2,
         Error = 3
     }
 

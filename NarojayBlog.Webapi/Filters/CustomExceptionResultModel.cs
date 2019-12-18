@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 
 namespace NarojayBlog.Webapi.Filters
 {
@@ -10,8 +11,8 @@ namespace NarojayBlog.Webapi.Filters
             Message = exception.InnerException != null ?
                 exception.InnerException.Message :
                 exception.Message;
-            Result = exception.Message;
-            ReturnStatus = ReturnStatus.Error;
+            Result = string.Empty;
+            ReturnStatus = code == (int)HttpStatusCode.OK ? ReturnStatus.FriendlyError : ReturnStatus.Error;
         }
     }
 }

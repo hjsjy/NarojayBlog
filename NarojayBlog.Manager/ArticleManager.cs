@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System;
+using AutoMapper;
 using Markdig;
 using NarojayBlog.DatabaseRepository.Model;
 using NarojayBlog.IManager;
@@ -7,6 +8,7 @@ using NarojayBlog.Repository.Repository;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Extensions.Logging;
+using NarojayBlog.Core;
 
 namespace NarojayBlog.Manager
 {
@@ -68,7 +70,7 @@ namespace NarojayBlog.Manager
         {
             if (id == "测试")
             {
-                throw new System.NotSupportedException("asdasdasd");
+                throw new NullReferenceException("用户不存在");
             }
 
             return "返回";

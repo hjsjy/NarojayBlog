@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\NarojayBlog.Core\NarojayBlog.Core.csproj" />
     <ProjectReference Include="..\NarojayBlog.Interface\NarojayBlog.IManager.csproj" />
     <ProjectReference Include="..\NarojayBlog.IRpository\NarojayBlog.Repository.csproj" />
     <ProjectReference Include="..\NarojayBLog.ManagerEntity\NarojayBlog.ManagerEntity.csproj" />

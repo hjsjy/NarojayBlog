@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NarojayBlog.Core;
 using NarojayBlog.DatabaseRepository.DbContext;
 using NarojayBlog.Webapi.Filters;
 using NarojayBlog.Webapi.Helper;
@@ -17,8 +18,13 @@ namespace NarojayBlog.Webapi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            ConfigureRedis();
         }
 
+        private void ConfigureRedis()
+        {
+            RedisHelper.Instance.Initialize();
+        }
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)

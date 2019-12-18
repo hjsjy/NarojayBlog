@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System;
 using System.Net;
 using System.Threading.Tasks;
+using NarojayBlog.Core;
 
 namespace NarojayBlog.Webapi.Filters
 {
@@ -33,7 +34,11 @@ namespace NarojayBlog.Webapi.Filters
 
         private static Task HandleExceptionAsync(HttpContext context, Exception ex)
         {
-            var code = HttpStatusCode.InternalServerError; 
+            var code = HttpStatusCode.InternalServerError;
+            if (ex is FriendlyException)
+            {
+                code = HttpStatusCode.BadRequest;
+            }
             var tes = new CustomExceptionResult((int) code, ex).Value;
             var result = JsonConvert.SerializeObject(tes);
             context.Response.ContentType = "application/json";

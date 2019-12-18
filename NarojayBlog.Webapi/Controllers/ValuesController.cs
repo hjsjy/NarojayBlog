@@ -25,16 +25,7 @@ namespace NarojayBlog.Webapi.Controllers
         [HttpPost("values")]
         public string Get(ArticleAddViewModel view)
         {
-            try
-            {
               return   _articleManager.TestException(view.Author);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                return "asdas";
-            }
-
         }
     }
 }
