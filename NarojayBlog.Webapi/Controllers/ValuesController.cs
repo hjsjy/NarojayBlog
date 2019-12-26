@@ -1,31 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
-using Markdig.Syntax;
 using Microsoft.AspNetCore.Mvc;
-using NarojayBlog.IManager;
-using NarojayBlog.Manager;
-using NarojayBlog.ViewModel;
-using NarojayBlog.Webapi.Filters;
+using Microsoft.Extensions.Logging;
+using NarojayBlog.Webapi.Controllers;
 
-namespace NarojayBlog.Webapi.Controllers
+namespace Hippo.WebAPI.Controllers
 {
-  
+    [Route("api/[controller]")]
+    [ApiController]
     public class ValuesController : BaseController
     {
-        private readonly IArticleManager _articleManager;
 
-        public ValuesController(IArticleManager articleManager , IMapper mapper) : base(mapper)
+
+        public ValuesController(IMapper mapper): base(mapper)
         {
-            _articleManager = articleManager;
+       
         }
+
         // GET api/values
-        [HttpPost("values")]
-        public string Get(ArticleAddViewModel view)
+        [HttpGet]
+        public string Get()
         {
-              return   _articleManager.TestException(view.Author);
+            return "asdasd";
+        }
+
+        // GET api/values/5
+        [HttpGet("{id}")]
+        public int Get(int id)
+        {
+            return 0;
+        }
+
+        // POST api/values
+        [HttpPost]
+        public int Post(string value)
+        {
+            return 0;
+        }
+
+        // PUT api/values/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string value)
+        {
+        }
+
+        // DELETE api/values/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
         }
     }
 }

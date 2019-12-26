@@ -1,17 +1,19 @@
-﻿using System;
+﻿using System.Linq;
+using System.Net;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Newtonsoft.Json;
-using System.Linq;
-using System.Net;
-using System.Security.Authentication;
 
 namespace NarojayBlog.Webapi.Filters
 {
     public class ValidateModelAttribute : ActionFilterAttribute
     {
+        /// <summary>
+        /// 参数校验
+        /// </summary>
+        /// <param name="context"></param>
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             if (!context.ModelState.IsValid)
@@ -22,19 +24,16 @@ namespace NarojayBlog.Webapi.Filters
 
         public override void OnActionExecuted(ActionExecutedContext context)
         {
-            if (context.Result is ValidationFailedResult)
+            switch (context.Result)
             {
-                var objectResult = context.Result as ObjectResult;
-                context.Result = objectResult;
-            }
-            else
-            {
-                 var objectResult = context.Result as ObjectResult;
-                context.Result = new OkObjectResult(new BaseResultModel(code: objectResult?.StatusCode,message:"success",result: objectResult?.Value));
+                case ValidationFailedResult _:
+                    break;
+                case ObjectResult objectResult:
+                    objectResult.Value = new NormalResponseModel(code: context?.HttpContext?.Response?.StatusCode, data: objectResult?.Value);
+                    context.Result = objectResult;
+                    break;
             }
         }
-
-
 
         public class ValidationFailedResult : ObjectResult
         {
@@ -45,16 +44,17 @@ namespace NarojayBlog.Webapi.Filters
                 StatusCode = StatusCodes.Status400BadRequest;
             }
         }
-        public class ValidationFailedResultModel : BaseResultModel
+        public class ValidationFailedResultModel : BaseResponseModel
         {
             public ValidationFailedResultModel(ModelStateDictionary modelState)
             {
-                Code = 422;
-                Message = "参数不合法";
-                Result = modelState.Keys
+                Code = (int)HttpStatusCode.BadRequest;
+                Message = modelState.Keys
+                    .SelectMany(key => modelState[key].Errors.Select(x => x.ErrorMessage)).FirstOrDefault();
+                ErrorDetail = modelState.Keys
                     .SelectMany(key => modelState[key].Errors.Select(x => new ValidationError(key, x.ErrorMessage)))
                     .ToList();
-                ReturnStatus = ReturnStatus.Fail;
+                Result = string.Empty;
             }
         }
         public class ValidationError

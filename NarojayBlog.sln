@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.Core", "Narojay
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.Repository", "NarojayBlog.IRpository\NarojayBlog.Repository.csproj", "{86BB0B64-496B-4586-80A1-23B2C66E1FA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NarojayBlog.ViewModel", "NarojayBlog.ViewModel\NarojayBlog.ViewModel.csproj", "{A81CB8E5-3150-47C8-BEC4-17215E01DC12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.ViewModel", "NarojayBlog.ViewModel\NarojayBlog.ViewModel.csproj", "{A81CB8E5-3150-47C8-BEC4-17215E01DC12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NarojayBlog.ManagerEntity", "NarojayBLog.ManagerEntity\NarojayBlog.ManagerEntity.csproj", "{8F622C4F-404F-4620-8857-F2FAE98C3094}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.ManagerEntity", "NarojayBLog.ManagerEntity\NarojayBlog.ManagerEntity.csproj", "{8F622C4F-404F-4620-8857-F2FAE98C3094}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisProcessor", "RedisProcessor\RedisProcessor.csproj", "{AF0AE119-D030-4FB7-AB01-59AFBFF39939}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{8F622C4F-404F-4620-8857-F2FAE98C3094}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F622C4F-404F-4620-8857-F2FAE98C3094}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F622C4F-404F-4620-8857-F2FAE98C3094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF0AE119-D030-4FB7-AB01-59AFBFF39939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF0AE119-D030-4FB7-AB01-59AFBFF39939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF0AE119-D030-4FB7-AB01-59AFBFF39939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF0AE119-D030-4FB7-AB01-59AFBFF39939}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

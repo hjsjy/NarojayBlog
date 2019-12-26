@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Net;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using NarojayBlog.Core;
+using Newtonsoft.Json;
 
 namespace NarojayBlog.Webapi.Filters
 {
@@ -21,28 +21,37 @@ namespace NarojayBlog.Webapi.Filters
 
         public async Task Invoke(HttpContext context)
         {
+            var code = HttpStatusCode.InternalServerError;
             try
             {
                 await next(context);
+
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Something went wrong: {ex}");
-                await HandleExceptionAsync(context, ex);
+                if (ex is TipsException)
+                {
+                    code = HttpStatusCode.BadRequest;
+                    if (ex.InnerException != null)
+                    {
+                        _logger.LogError($"异常信息: {ex.InnerException.Message}");
+                    }
+                }
+                else
+                {
+                    _logger.LogError($"异常信息: {ex.Message}");
+
+                }
+                await HandleExceptionAsync(context, ex, (int)code);
             }
         }
 
-        private static Task HandleExceptionAsync(HttpContext context, Exception ex)
+        private static Task HandleExceptionAsync(HttpContext context, Exception ex, int code)
         {
-            var code = HttpStatusCode.InternalServerError;
-            if (ex is FriendlyException)
-            {
-                code = HttpStatusCode.BadRequest;
-            }
-            var tes = new CustomExceptionResult((int) code, ex).Value;
+            var tes = new ExceptionResultModel(code, ex);
             var result = JsonConvert.SerializeObject(tes);
             context.Response.ContentType = "application/json";
-            context.Response.StatusCode = (int)code;
+            context.Response.StatusCode = code;
             return context.Response.WriteAsync(result);
         }
     }

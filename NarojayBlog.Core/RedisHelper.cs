@@ -29,8 +29,8 @@ namespace NarojayBlog.Core
                 {
                     if (_redisConnection == null)
                     {
-                        _redisConnection = ConnectionMultiplexer.Connect(_configurationOptions);
-                        Subscriber = _redisConnection.GetSubscriber();
+                       // _redisConnection = ConnectionMultiplexer.Connect(_configurationOptions);
+                        //Subscriber = _redisConnection.GetSubscriber();
                     }
                 }
             }
