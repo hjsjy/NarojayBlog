@@ -29,8 +29,8 @@ namespace NarojayBlog.Webapi.Filters
                 case ValidationFailedResult _:
                     break;
                 case ObjectResult objectResult:
-                    objectResult.Value = new NormalResponseModel(code: context?.HttpContext?.Response?.StatusCode, data: objectResult?.Value);
-                    context.Result = objectResult;
+                    var responseModel = new NormalResponseModel(code: context?.HttpContext?.Response?.StatusCode, data: objectResult?.Value);
+                    context.Result = new JsonResult(responseModel);
                     break;
             }
         }
