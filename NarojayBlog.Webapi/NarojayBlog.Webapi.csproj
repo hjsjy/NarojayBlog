@@ -14,6 +14,7 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="2.2.12" />
+    <PackageReference Include="MQTTnet" Version="3.0.8" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
 
@@ -21,6 +22,7 @@
     <ProjectReference Include="..\NarojayBlog.Common\NarojayBlog.Common.csproj" />
     <ProjectReference Include="..\NarojayBlog.Core\NarojayBlog.Core.csproj" />
     <ProjectReference Include="..\NarojayBlog.Manager\NarojayBlog.Manager.csproj" />
+    <ProjectReference Include="..\NarojayBlog.Repository\NarojayBlog.DatabaseRepository.csproj" />
     <ProjectReference Include="..\NarojayBlog.ViewModel\NarojayBlog.ViewModel.csproj" />
   </ItemGroup>
 
