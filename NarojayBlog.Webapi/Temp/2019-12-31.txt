@@ -1,0 +1,246 @@
+2019-12-31 22:50:35,783 [1] INFO  App  
+ User profile is available. Using 'C:\Users\黄杰\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2019-12-31 22:50:42,994 [9] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger   
+ 
+2019-12-31 22:50:43,045 [9] INFO  App  
+ Request finished in 47.8599ms 301  
+ 
+2019-12-31 22:50:43,060 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/index.html   
+ 
+2019-12-31 22:50:43,301 [10] INFO  App  
+ Request finished in 242.9952ms 200 text/html 
+ 
+2019-12-31 22:50:43,334 [7] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2019-12-31 22:50:43,345 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2019-12-31 22:50:43,349 [9] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2019-12-31 22:50:43,388 [7] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2019-12-31 22:50:43,395 [7] INFO  App  
+ Request finished in 63.435ms 200 text/css 
+ 
+2019-12-31 22:50:43,404 [7] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2019-12-31 22:50:43,413 [7] INFO  App  
+ Request finished in 61.6411ms 200 application/javascript 
+ 
+2019-12-31 22:50:43,419 [12] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2019-12-31 22:50:43,422 [12] INFO  App  
+ Request finished in 78.2344ms 200 application/javascript 
+ 
+2019-12-31 22:50:44,430 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2019-12-31 22:50:44,469 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/swagger/favicon-32x32.png   
+ 
+2019-12-31 22:50:44,478 [10] INFO  App  
+ Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+ 
+2019-12-31 22:50:44,481 [10] INFO  App  
+ Request finished in 12.9292ms 200 image/png 
+ 
+2019-12-31 22:50:44,630 [12] INFO  App  
+ Request finished in 199.8473ms 200 application/json;charset=utf-8 
+ 
+2019-12-31 22:50:50,094 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/api/Article/WordsNumber   
+ 
+2019-12-31 22:50:50,148 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-12-31 22:50:50,187 [6] INFO  App  
+ Route matched with {action = "GetWordsNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetWordsNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-12-31 22:50:50,501 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-12-31 22:50:50,506 [6] INFO  App  
+ calculate the total number of article words 
+ 
+2019-12-31 22:50:50,933 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-12-31 22:50:51,750 [6] INFO  App  
+ Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT LENGTH(x."Content")
+FROM "Articles" AS x 
+ 
+2019-12-31 22:50:51,776 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1268.6358ms. 
+ 
+2019-12-31 22:50:51,792 [6] INFO  App  
+ Executing JsonResult, writing value of type 'NarojayBlog.Webapi.Filters.NormalResponseModel'. 
+ 
+2019-12-31 22:50:51,814 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi) in 1620.0418ms 
+ 
+2019-12-31 22:50:51,818 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetWordsNumber (NarojayBlog.Webapi)' 
+ 
+2019-12-31 22:50:51,827 [6] INFO  App  
+ Request finished in 1740.0048ms 200 application/json; charset=utf-8 
+ 
+2019-12-31 22:50:57,986 [10] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/api/Article/Title   
+ 
+2019-12-31 22:50:57,995 [10] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetTitleNumber (NarojayBlog.Webapi)' 
+ 
+2019-12-31 22:50:58,009 [10] INFO  App  
+ Route matched with {action = "GetTitleNumber", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetTitleNumber() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-12-31 22:50:58,042 [10] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetTitleNumber (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-12-31 22:50:58,049 [10] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-12-31 22:50:58,095 [10] INFO  App  
+ Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "Articles" AS x 
+ 
+2019-12-31 22:50:58,099 [10] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetTitleNumber (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 53.1516ms. 
+ 
+2019-12-31 22:50:58,101 [10] INFO  App  
+ Executing JsonResult, writing value of type 'NarojayBlog.Webapi.Filters.NormalResponseModel'. 
+ 
+2019-12-31 22:50:58,107 [10] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetTitleNumber (NarojayBlog.Webapi) in 93.6976ms 
+ 
+2019-12-31 22:50:58,110 [10] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetTitleNumber (NarojayBlog.Webapi)' 
+ 
+2019-12-31 22:50:58,113 [10] INFO  App  
+ Request finished in 130.174ms 200 application/json; charset=utf-8 
+ 
+2019-12-31 22:51:02,330 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/api/Article/Articles   
+ 
+2019-12-31 22:51:02,337 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-12-31 22:51:02,342 [6] INFO  App  
+ Route matched with {action = "GetArticles", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticles() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-12-31 22:51:02,372 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-12-31 22:51:02,388 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-12-31 22:51:02,431 [6] INFO  App  
+ Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a 
+ 
+2019-12-31 22:51:02,723 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 347.4946ms. 
+ 
+2019-12-31 22:51:02,726 [6] INFO  App  
+ Executing JsonResult, writing value of type 'NarojayBlog.Webapi.Filters.NormalResponseModel'. 
+ 
+2019-12-31 22:51:02,746 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi) in 396.7816ms 
+ 
+2019-12-31 22:51:02,751 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticles (NarojayBlog.Webapi)' 
+ 
+2019-12-31 22:51:02,757 [6] INFO  App  
+ Request finished in 425.5551ms 200 application/json; charset=utf-8 
+ 
+2019-12-31 22:51:18,343 [12] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/api/Article/Articles/1?size=2   
+ 
+2019-12-31 22:51:18,376 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticlePage (NarojayBlog.Webapi)' 
+ 
+2019-12-31 22:51:18,409 [12] INFO  App  
+ Route matched with {action = "GetArticlePage", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticlePage(Int32, Int32) on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-12-31 22:51:18,518 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticlePage (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-12-31 22:51:18,528 [12] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-12-31 22:51:18,554 [12] WARN  App  
+ Query: '(from Article <generated>_2 in DbSet<Article> select [<generated>_2]).Skip(__p_0).Take(__p_1)' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results. 
+ 
+2019-12-31 22:51:18,602 [12] INFO  App  
+ Executed DbCommand (23ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT a."Id", a."Author", a."CatalogId", a."CommentAmount", a."Content", a."CreateTime", a."PraiseAmount", a."ReadingAmount", a."Title"
+FROM "Articles" AS a
+LIMIT @__p_1 OFFSET @__p_0 
+ 
+2019-12-31 22:51:18,636 [12] INFO  App  
+ Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)::INT
+FROM "Articles" AS x 
+ 
+2019-12-31 22:51:18,640 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticlePage (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 118.8656ms. 
+ 
+2019-12-31 22:51:18,644 [12] INFO  App  
+ Executing JsonResult, writing value of type 'NarojayBlog.Webapi.Filters.NormalResponseModel'. 
+ 
+2019-12-31 22:51:18,658 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticlePage (NarojayBlog.Webapi) in 245.1216ms 
+ 
+2019-12-31 22:51:18,663 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticlePage (NarojayBlog.Webapi)' 
+ 
+2019-12-31 22:51:18,668 [12] INFO  App  
+ Request finished in 324.3441ms 200 application/json; charset=utf-8 
+ 
+2019-12-31 22:51:25,067 [6] INFO  App  
+ Request starting HTTP/1.1 GET https://localhost:8087/api/Article/Article/2   
+ 
+2019-12-31 22:51:25,070 [6] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticle (NarojayBlog.Webapi)' 
+ 
+2019-12-31 22:51:25,082 [6] INFO  App  
+ Route matched with {action = "GetArticle", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetArticle(System.String) on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2019-12-31 22:51:25,114 [6] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticle (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2019-12-31 22:51:25,119 [6] INFO  App  
+ Entity Framework Core 2.2.6-servicing-10079 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2019-12-31 22:51:25,169 [6] INFO  App  
+ Executed DbCommand (29ms) [Parameters=[@__id_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x
+WHERE x."Id" = @__id_0
+LIMIT 1 
+ 
+2019-12-31 22:51:25,265 [6] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.GetArticle (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 148.1937ms. 
+ 
+2019-12-31 22:51:25,267 [6] INFO  App  
+ Executing JsonResult, writing value of type 'NarojayBlog.Webapi.Filters.NormalResponseModel'. 
+ 
+2019-12-31 22:51:25,270 [6] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.GetArticle (NarojayBlog.Webapi) in 183.3363ms 
+ 
+2019-12-31 22:51:25,272 [6] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.GetArticle (NarojayBlog.Webapi)' 
+ 
+2019-12-31 22:51:25,276 [6] INFO  App  
+ Request finished in 209.2367ms 200 application/json; charset=utf-8 
+ 

@@ -1,8 +1,7 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using NarojayBlog.IManager;
-using NarojayBlog.ManagerEntity;
+using NarojayBlog.Manager.Entiy;
+using NarojayBlog.Manager.IManager;
 using NarojayBlog.ViewModel;
 
 namespace NarojayBlog.Webapi.Controllers
@@ -11,7 +10,7 @@ namespace NarojayBlog.Webapi.Controllers
     {
         private readonly ICatalogManager _catalogManager;
 
-        public CatalogController(IMapper mapper,ICatalogManager catalogManager) : base(mapper)
+        public CatalogController(IMapper mapper, ICatalogManager catalogManager) : base(mapper)
         {
             _catalogManager = catalogManager;
         }
@@ -28,17 +27,9 @@ namespace NarojayBlog.Webapi.Controllers
         [HttpGet]
         public IActionResult GetCatalogs()
         {
-            try
-            {
-                var catalogEntities = _catalogManager.GetCatalogs();
-                return Ok(catalogEntities);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-
+            var catalogEntities = _catalogManager.GetCatalogs();
+            return Ok(catalogEntities);
         }
-        
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NarojayBlog.ManagerEntity
+namespace NarojayBlog.Manager.Entiy
 {
     public class ArticleEntity
     {

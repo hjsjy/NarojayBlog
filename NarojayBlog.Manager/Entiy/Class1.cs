@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NarojayBlog.ManagerEntity
+﻿namespace NarojayBlog.Manager.Entiy
 {
     class Class1
     {

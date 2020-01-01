@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using NarojayBlog.Webapi.Controllers;
 
-namespace Hippo.WebAPI.Controllers
+namespace NarojayBlog.Webapi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -13,9 +9,9 @@ namespace Hippo.WebAPI.Controllers
     {
 
 
-        public ValuesController(IMapper mapper): base(mapper)
+        public ValuesController(IMapper mapper) : base(mapper)
         {
-       
+
         }
 
         // GET api/values

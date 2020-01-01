@@ -12,7 +12,7 @@ namespace RedisProcessor
         {
         
             queue.Enqueue((int)message);
-           
+
         }
 
         public void Start()

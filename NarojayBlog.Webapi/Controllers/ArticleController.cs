@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using NarojayBlog.IManager;
-using NarojayBlog.ManagerEntity;
+using NarojayBlog.Manager.Entiy;
+using NarojayBlog.Manager.IManager;
 using NarojayBlog.ViewModel;
 using System;
 using System.Linq;
@@ -21,106 +21,63 @@ namespace NarojayBlog.Webapi.Controllers
         [HttpGet("WordsNumber")]
         public IActionResult GetWordsNumber()
         {
-            try
-            {
-                var numbers = _articleManager.CalculateArticleWordsNumber();
-                return Ok(numbers);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
+            var numbers = _articleManager.CalculateArticleWordsNumber();
+            return Ok(numbers);
         }
 
         [HttpGet("Title")]
         public IActionResult GetTitleNumber()
         {
-            try
-            {
-                var numbers = _articleManager.GetArticleNumber();
-                return Ok(numbers);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
+            var numbers = _articleManager.GetArticleNumber();
+            return Ok(numbers);
         }
 
         [HttpGet("Articles")]
         public IActionResult GetArticles()
         {
-            try
+            var articleEntities = _articleManager.GetArticles();
+            if (!articleEntities.Any())
             {
-                var articleEntities = _articleManager.GetArticles();
-                if (!articleEntities.Any())
-                {
-                    return NoContent();
-                }
+                return NoContent();
+            }
 
-                return Ok(articleEntities);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
+            return Ok(articleEntities);
+
         }
         [HttpGet("Articles/{page}")]
-        public IActionResult GetArticlePage(int page,int size = 2)
+        public IActionResult GetArticlePage(int page, int size = 2)
         {
-            try
+            var articles = _articleManager.GetArticles(page, size);
+            var total = _articleManager.GetArticleNumber();
+            var PageModel = new PageModel<ArticleEntity>
             {
-                var articles = _articleManager.GetArticles(page,size);
-                var total = _articleManager.GetArticleNumber();
-                var PageModel = new PageModel<ArticleEntity>
-                {
-                    Values = articles,
-                    Total = total,
-                    PageSize =  Math.Ceiling(Convert.ToDecimal(total / (double)size ))
-                };
-                return Ok(PageModel);
-
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
+                Values = articles,
+                Total = total,
+                PageSize = Math.Ceiling(Convert.ToDecimal(total / (double)size))
+            };
+            return Ok(PageModel);
         }
         ///
         [HttpGet("Article/{id}")]
         public IActionResult GetArticle(string id)
         {
-            try
+            var articleEntity = _articleManager.GetArticleById(id);
+            if (articleEntity == null)
             {
-                var articleEntity = _articleManager.GetArticleById(id);
-                if (articleEntity == null)
-                {
-                    return NoContent();
-                }
-                return Ok(articleEntity);
+                return NoContent();
             }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
+            return Ok(articleEntity);
         }
 
         [HttpPost]
         public IActionResult AddArticle(ArticleAddViewModel articleAddViewModel)
         {
-            try
+            var result = _articleManager.AddArticle(Mapper.Map<ArticleEntity>(articleAddViewModel));
+            if (!result)
             {
-                var result = _articleManager.AddArticle(Mapper.Map<ArticleEntity>(articleAddViewModel));
-                if (!result)
-                {
-                    return BadRequest(new { Code = 1002, Content = "文章添加失败" });
-                }
-                return Ok();
+                return BadRequest(new { Code = 1002, Content = "文章添加失败" });
             }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
+            return Ok();
         }
     }
 }

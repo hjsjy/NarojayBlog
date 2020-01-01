@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
+﻿using System.Collections.Generic;
 using AutoMapper;
 using NarojayBlog.DatabaseRepository.Model;
 using NarojayBlog.Repository.IRepository;
 
-namespace NarojayBlog.Manager
+namespace NarojayBlog.Manager.Manager
 {
     public abstract class BaseManager<TModel, TEntity, TRepository>
         where TModel : BaseModel

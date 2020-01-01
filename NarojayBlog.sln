@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.29209.62
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.Webapi", "NarojayBlog.Webapi\NarojayBlog.Webapi.csproj", "{78F9C041-C1AF-4E31-A5AD-C8ABD7CDC753}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.IManager", "NarojayBlog.Interface\NarojayBlog.IManager.csproj", "{323ED628-544C-4923-A2C0-1DED81817790}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.Manager", "NarojayBlog.Manager\NarojayBlog.Manager.csproj", "{69CC45DF-AE2B-48A9-8BDE-0C2CD16A227C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.Common", "NarojayBlog.Common\NarojayBlog.Common.csproj", "{52C31629-0661-483D-92F2-F4D5CA7F861B}"
@@ -18,8 +16,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.Repository", "NarojayBlog.IRpository\NarojayBlog.Repository.csproj", "{86BB0B64-496B-4586-80A1-23B2C66E1FA8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.ViewModel", "NarojayBlog.ViewModel\NarojayBlog.ViewModel.csproj", "{A81CB8E5-3150-47C8-BEC4-17215E01DC12}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarojayBlog.ManagerEntity", "NarojayBLog.ManagerEntity\NarojayBlog.ManagerEntity.csproj", "{8F622C4F-404F-4620-8857-F2FAE98C3094}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisProcessor", "RedisProcessor\RedisProcessor.csproj", "{AF0AE119-D030-4FB7-AB01-59AFBFF39939}"
 EndProject
@@ -33,10 +29,6 @@ Global
 		{78F9C041-C1AF-4E31-A5AD-C8ABD7CDC753}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78F9C041-C1AF-4E31-A5AD-C8ABD7CDC753}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78F9C041-C1AF-4E31-A5AD-C8ABD7CDC753}.Release|Any CPU.Build.0 = Release|Any CPU
-		{323ED628-544C-4923-A2C0-1DED81817790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{323ED628-544C-4923-A2C0-1DED81817790}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{323ED628-544C-4923-A2C0-1DED81817790}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{323ED628-544C-4923-A2C0-1DED81817790}.Release|Any CPU.Build.0 = Release|Any CPU
 		{69CC45DF-AE2B-48A9-8BDE-0C2CD16A227C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{69CC45DF-AE2B-48A9-8BDE-0C2CD16A227C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69CC45DF-AE2B-48A9-8BDE-0C2CD16A227C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,10 +53,6 @@ Global
 		{A81CB8E5-3150-47C8-BEC4-17215E01DC12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A81CB8E5-3150-47C8-BEC4-17215E01DC12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A81CB8E5-3150-47C8-BEC4-17215E01DC12}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F622C4F-404F-4620-8857-F2FAE98C3094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F622C4F-404F-4620-8857-F2FAE98C3094}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F622C4F-404F-4620-8857-F2FAE98C3094}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F622C4F-404F-4620-8857-F2FAE98C3094}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF0AE119-D030-4FB7-AB01-59AFBFF39939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AF0AE119-D030-4FB7-AB01-59AFBFF39939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF0AE119-D030-4FB7-AB01-59AFBFF39939}.Release|Any CPU.ActiveCfg = Release|Any CPU

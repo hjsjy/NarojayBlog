@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using NarojayBlog.Manager;
+using NarojayBlog.Manager.Manager;
 
 namespace NarojayBlog.Webapi.Controllers
 {
-    public class GustBookController :BaseController
+    public class GustBookController : BaseController
     {
         private readonly GuestBookManager _guestBookManager;
 
@@ -20,16 +16,8 @@ namespace NarojayBlog.Webapi.Controllers
         [HttpGet("GuestBook")]
         public IActionResult GetGuestBooks()
         {
-            try
-            {
-                var result = _guestBookManager.GetAllGuestBook();
-                return Ok(result);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-
+            var result = _guestBookManager.GetAllGuestBook();
+            return Ok(result);
         }
     }
 }

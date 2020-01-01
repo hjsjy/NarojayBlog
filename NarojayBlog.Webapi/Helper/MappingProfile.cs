@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using NarojayBlog.DatabaseRepository.Model;
-using NarojayBlog.ManagerEntity;
+using NarojayBlog.Manager.Entiy;
 using NarojayBlog.ViewModel;
 
 namespace NarojayBlog.Webapi.Helper

@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using NarojayBlog.ManagerEntity;
+﻿using System.Collections.Generic;
+using NarojayBlog.Manager.Entiy;
 
-namespace NarojayBlog.IManager
+namespace NarojayBlog.Manager.IManager
 {
     public interface ICatalogManager
     {

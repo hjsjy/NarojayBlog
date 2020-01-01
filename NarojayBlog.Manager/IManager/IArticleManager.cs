@@ -1,7 +1,7 @@
-﻿using NarojayBlog.ManagerEntity;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using NarojayBlog.Manager.Entiy;
 
-namespace NarojayBlog.IManager
+namespace NarojayBlog.Manager.IManager
 {
     public interface IArticleManager
     {
@@ -13,7 +13,5 @@ namespace NarojayBlog.IManager
         int CalculateArticleWordsNumber();
         int GetArticleNumber();
         IEnumerable<ArticleEntity> GetArticles(int page, int size);
-        string TestException(string id);
-
     }
 }

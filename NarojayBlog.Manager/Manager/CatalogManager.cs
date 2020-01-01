@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using AutoMapper;
 using NarojayBlog.DatabaseRepository.Model;
-using NarojayBlog.IManager;
-using NarojayBlog.ManagerEntity;
+using NarojayBlog.Manager.Entiy;
+using NarojayBlog.Manager.IManager;
 using NarojayBlog.Repository.Repository;
 
-namespace NarojayBlog.Manager
+namespace NarojayBlog.Manager.Manager
 {
     public class CatalogManager : BaseManager<Catalog,CatalogEntity,CatalogRepository>, ICatalogManager
     {

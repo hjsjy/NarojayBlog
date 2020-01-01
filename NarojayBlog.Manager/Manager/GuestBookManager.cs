@@ -1,11 +1,11 @@
-﻿using AutoMapper;
+﻿using System.Collections.Generic;
+using AutoMapper;
 using NarojayBlog.DatabaseRepository.Model;
-using NarojayBlog.IManager;
-using NarojayBlog.ManagerEntity;
+using NarojayBlog.Manager.Entiy;
+using NarojayBlog.Manager.IManager;
 using NarojayBlog.Repository.Repository;
-using System.Collections.Generic;
 
-namespace NarojayBlog.Manager
+namespace NarojayBlog.Manager.Manager
 {
     public class GuestBookManager : BaseManager<GuestBook, GuestBookEntity, GuestBookRepository>, IGuestBookManager
     {

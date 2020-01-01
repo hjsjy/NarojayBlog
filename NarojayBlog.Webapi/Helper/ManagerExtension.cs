@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using NarojayBlog.IManager;
 using NarojayBlog.Manager;
+using NarojayBlog.Manager.IManager;
+using NarojayBlog.Manager.Manager;
 
 namespace NarojayBlog.Webapi.Helper
 {

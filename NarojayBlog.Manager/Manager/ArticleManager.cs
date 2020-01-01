@@ -1,16 +1,15 @@
 ﻿using System;
-using AutoMapper;
-using Markdig;
-using NarojayBlog.DatabaseRepository.Model;
-using NarojayBlog.IManager;
-using NarojayBlog.ManagerEntity;
-using NarojayBlog.Repository.Repository;
 using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
+using Markdig;
 using Microsoft.Extensions.Logging;
-using NarojayBlog.Core;
+using NarojayBlog.DatabaseRepository.Model;
+using NarojayBlog.Manager.Entiy;
+using NarojayBlog.Manager.IManager;
+using NarojayBlog.Repository.Repository;
 
-namespace NarojayBlog.Manager
+namespace NarojayBlog.Manager.Manager
 {
     public class ArticleManager : BaseManager<Article, ArticleEntity, ArticleRepository>, IArticleManager
     {
