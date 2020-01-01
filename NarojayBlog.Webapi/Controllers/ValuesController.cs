@@ -8,6 +8,7 @@ using MQTTnet.Client;
 using MQTTnet.Client.Options;
 using NarojayBlog.DatabaseRepository.DbContext;
 using NarojayBlog.DatabaseRepository.Model;
+using NarojayBlog.ViewModel;
 using NarojayBlog.Webapi.Helper;
 using Newtonsoft.Json;
 
@@ -33,9 +34,13 @@ namespace NarojayBlog.Webapi.Controllers
                                                            && x.CreateTime <= DateTime.Now.AddMonths(-6)).ToList();
             return  Ok(articles);
         }                   
-        // POST api/values
+        /// <summary>
+        /// 测试mqttnet
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         [HttpPost]
-        public async Task Post(string value)
+        public async Task Post(DataValue value)
         {
         var options = new MqttClientOptionsBuilder()
             .WithClientId(ClientId)
@@ -43,22 +48,18 @@ namespace NarojayBlog.Webapi.Controllers
             .WithCredentials("admin", "123456")
             .WithCleanSession()
             .Build();
-        MqttClient mqttclient = new MqttFactory().CreateMqttClient() as MqttClient;
+        var mqttclient = new MqttFactory().CreateMqttClient();
             if (null == mqttclient)
         {
-            throw new Exception("mqttclient为空");
+            throw new Exception("mqttclient有点问题");
         }
         await mqttclient.ConnectAsync(options);
         var sendTopic = $"topic/narojay";
-        var sendMsg = JsonConvert.SerializeObject(new ChannelTokenModel
-        {
-            Token = value,
-            ChannelId = value
-        });
+        var sendMsg = JsonConvert.SerializeObject(value);
         var msg = new MqttApplicationMessageBuilder().WithTopic(sendTopic).WithPayload(sendMsg)
             .WithQualityOfServiceLevel(MQTTnet.Protocol.MqttQualityOfServiceLevel.AtLeastOnce).WithRetainFlag(false)
             .Build();
-        for (int i = 0; i < 1000; i++)
+        for (var i = 0; i < 1000; i++)
         {
             mqttclient.PublishAsync(msg);
         }
