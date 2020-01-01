@@ -8,7 +8,7 @@ website:[narojayblog](http://www.narojay.com)
 * server: aliyun ubuntu 18.04
 * database : postgresql
 * nosql :redis
-* framework  asp.netcore webapi/EntityFrameWorkCore/AutoMapper/markdig/log4net
+* framework  asp.netcore webapi/EntityFrameWorkCore/AutoMapper/markdig/log4net/mqttnet
 
 ## Development process
 
@@ -19,4 +19,6 @@ website:[narojayblog](http://www.narojay.com)
 * 2019.9.4 deploy static website by docker.
 * 2019.11.6 add cors and and paging.
 * 2019.12.12 webui [NarojayBlogWebUI](https://github.com/hjsjy/NarojayBlogWebUI)<br>
+* 2019.12.12 webui [NarojayBlogWebUI](https://github.com/hjsjy/NarojayBlogWebUI)<br>
+* 2020.1.add global exception handler| add mqttnet test demo<br>
 if the repository is userful for you ,you can **star** for me
