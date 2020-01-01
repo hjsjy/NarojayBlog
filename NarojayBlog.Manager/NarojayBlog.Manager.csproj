@@ -11,8 +11,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NarojayBlog.Core\NarojayBlog.Core.csproj" />
-    <ProjectReference Include="..\NarojayBlog.IRpository\NarojayBlog.Repository.csproj" />
-    <ProjectReference Include="..\NarojayBlog.Repository\NarojayBlog.DatabaseRepository.csproj" />
+    <ProjectReference Include="..\NarojayBlog.Repository\NarojayBlog.Repository.csproj" />
+    <ProjectReference Include="..\NarojayBlog.DatabaseRepository\NarojayBlog.DatabaseRepository.csproj" />
     <ProjectReference Include="..\NarojayBlog.ViewModel\NarojayBlog.ViewModel.csproj" />
   </ItemGroup>
 

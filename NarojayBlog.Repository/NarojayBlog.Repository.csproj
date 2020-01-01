@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NarojayBlog.Repository\NarojayBlog.DatabaseRepository.csproj" />
+    <ProjectReference Include="..\NarojayBlog.DatabaseRepository\NarojayBlog.DatabaseRepository.csproj" />
   </ItemGroup>
 
 </Project>
