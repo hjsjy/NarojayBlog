@@ -1,0 +1,57 @@
+2020-03-12 22:30:09,228 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-12 22:30:09,528 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-12 22:30:09,532 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-12 22:30:09,536 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-12 22:30:09,540 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-12 22:30:09,967 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-12 22:30:10,000 [4] INFO  App  
+ Request finished in 32.6272ms 200 text/html;charset=utf-8 
+ 
+2020-03-12 22:30:10,138 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-12 22:30:10,213 [4] INFO  App  
+ Request finished in 75.0292ms 200 application/json;charset=utf-8 
+ 
+2020-03-12 22:30:39,143 [5] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test?testString=1  0 
+ 
+2020-03-12 22:30:39,153 [5] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-12 22:30:39,177 [5] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-12 22:30:39,211 [5] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test(System.String) on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-12 22:30:39,454 [5] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-12 22:30:42,524 [5] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-12 22:30:44,964 [5] INFO  App  
+ Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x
+WHERE x."Author" = 'me' 
+ 
+2020-03-12 22:30:49,962 [5] INFO  App  
+ Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x
+WHERE x."Author" = 'me' 
+ 

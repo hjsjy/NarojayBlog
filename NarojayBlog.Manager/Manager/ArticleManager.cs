@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using AutoMapper;
 using Markdig;
 using Microsoft.Extensions.Logging;
+using NarojayBlog.DatabaseRepository.DbContext;
 using NarojayBlog.DatabaseRepository.Model;
 using NarojayBlog.Manager.Entiy;
 using NarojayBlog.Manager.IManager;
@@ -14,10 +16,12 @@ namespace NarojayBlog.Manager.Manager
     public class ArticleManager : BaseManager<Article, ArticleEntity, ArticleRepository>, IArticleManager
     {
         private readonly ILogger _logger;
+        private readonly NarojayContext _context;
 
-        public ArticleManager(ArticleRepository articleRepository, IMapper mapper,ILogger<ArticleManager> logger ) : base(articleRepository, mapper)
+        public ArticleManager(ArticleRepository articleRepository, IMapper mapper,ILogger<ArticleManager> logger, NarojayContext context) : base(articleRepository, mapper)
         {
             _logger = logger;
+            _context = context;
         }
         public int GetArticleNumber()
         {
@@ -64,6 +68,13 @@ namespace NarojayBlog.Manager.Manager
             }
             return Mapper.Map<IEnumerable<ArticleEntity>>(articleEntities);
         }
+
+        public async Task<int> TestAsync(int id)
+        {
+            await Task.Delay(5000);
+            return id;
+        }
+
 
         public string TestException(string id)
         {

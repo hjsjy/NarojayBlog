@@ -1,0 +1,647 @@
+2020-03-09 22:54:25,301 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 22:54:25,334 [1] INFO  App  
+ Creating key {77715eaf-4bfb-4c57-8cbe-2d6def2594cc} with creation date 2020-03-09 14:54:25Z, activation date 2020-03-09 14:54:25Z, and expiration date 2020-06-07 14:54:25Z. 
+ 
+2020-03-09 22:54:25,401 [1] INFO  App  
+ Writing data to file 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys\key-77715eaf-4bfb-4c57-8cbe-2d6def2594cc.xml'. 
+ 
+2020-03-09 22:54:25,873 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 22:54:25,879 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 22:54:25,884 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 22:54:25,888 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 22:54:26,938 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger   
+ 
+2020-03-09 22:54:26,949 [4] INFO  App  
+ Request finished in 12.5248ms 301  
+ 
+2020-03-09 22:54:26,958 [14] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 22:54:26,998 [14] INFO  App  
+ Request finished in 39.0346ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 22:54:27,008 [10] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2020-03-09 22:54:27,009 [7] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2020-03-09 22:54:27,011 [17] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2020-03-09 22:54:27,060 [10] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2020-03-09 22:54:27,066 [4] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2020-03-09 22:54:27,063 [9] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2020-03-09 22:54:27,068 [10] INFO  App  
+ Request finished in 60.7405ms 200 text/css 
+ 
+2020-03-09 22:54:27,078 [4] INFO  App  
+ Request finished in 69.3717ms 200 application/javascript 
+ 
+2020-03-09 22:54:27,082 [9] INFO  App  
+ Request finished in 73.8403ms 200 application/javascript 
+ 
+2020-03-09 22:54:27,185 [9] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 22:54:27,208 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/favicon-32x32.png   
+ 
+2020-03-09 22:54:27,216 [4] INFO  App  
+ Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+ 
+2020-03-09 22:54:27,223 [4] INFO  App  
+ Request finished in 14.5576ms 200 image/png 
+ 
+2020-03-09 22:54:27,267 [9] INFO  App  
+ Request finished in 82.0495ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 22:54:32,754 [2] INFO  App  
+ Application is shutting down... 
+ 
+2020-03-09 22:54:38,501 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 22:54:38,806 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 22:54:38,814 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 22:54:38,820 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 22:54:38,827 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 22:54:39,863 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 22:54:39,892 [4] INFO  App  
+ Request finished in 30.7037ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 22:54:40,041 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 22:54:40,123 [4] INFO  App  
+ Request finished in 81.7404ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 22:58:31,760 [12] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test  0 
+ 
+2020-03-09 22:58:31,771 [12] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-09 22:58:31,798 [12] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 22:58:31,823 [12] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-09 22:58:32,180 [12] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-09 22:58:32,634 [12] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-09 22:58:32,645 [12] INFO  App  
+ Executed action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 455.8835ms. 
+ 
+2020-03-09 22:58:32,654 [12] INFO  App  
+ Executing JsonResult, writing value of type 'NarojayBlog.Webapi.Filters.NormalResponseModel'. 
+ 
+2020-03-09 22:58:33,149 [12] INFO  App  
+ Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x
+WHERE x."CatalogId" = 'asa' 
+ 
+2020-03-09 22:58:33,170 [12] INFO  App  
+ Executed action NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) in 1337.1402ms 
+ 
+2020-03-09 22:58:33,177 [12] INFO  App  
+ Executed endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 22:58:33,190 [12] INFO  App  
+ Request finished in 1430.1802ms 200 application/json; charset=utf-8 
+ 
+2020-03-09 22:59:35,626 [8] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test  0 
+ 
+2020-03-09 22:59:35,636 [8] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-09 22:59:35,652 [8] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 22:59:35,661 [8] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-09 22:59:35,682 [8] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-09 22:59:40,254 [8] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-09 22:59:57,937 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 22:59:58,233 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 22:59:58,244 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 22:59:58,253 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 22:59:58,260 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 22:59:59,469 [7] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 22:59:59,500 [7] INFO  App  
+ Request finished in 32.2716ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 22:59:59,589 [10] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 22:59:59,666 [10] INFO  App  
+ Request finished in 77.3249ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 23:00:04,760 [7] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test  0 
+ 
+2020-03-09 23:00:04,771 [7] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-09 23:00:04,795 [7] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 23:00:04,819 [7] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-09 23:00:04,962 [7] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-09 23:00:07,895 [7] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-09 23:00:08,382 [7] INFO  App  
+ Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x
+WHERE x."Author" = 'asa'
+LIMIT 1 
+ 
+2020-03-09 23:00:55,934 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 23:00:56,202 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 23:00:56,209 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 23:00:56,215 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 23:00:56,220 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 23:00:57,439 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 23:00:57,471 [4] INFO  App  
+ Request finished in 32.4729ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 23:00:57,559 [7] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 23:00:57,637 [7] INFO  App  
+ Request finished in 77.6638ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 23:03:22,783 [7] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test  0 
+ 
+2020-03-09 23:03:22,794 [7] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-09 23:03:22,818 [7] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 23:03:22,845 [7] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test() on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-09 23:03:22,989 [7] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-09 23:03:27,568 [7] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-09 23:03:28,038 [7] INFO  App  
+ Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x
+WHERE x."Author" = 'asa' 
+ 
+2020-03-09 23:04:33,586 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 23:04:33,907 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 23:04:33,917 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 23:04:33,925 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 23:04:33,934 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 23:04:34,712 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 23:04:34,745 [4] INFO  App  
+ Request finished in 34.2049ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 23:04:34,841 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 23:04:34,917 [4] INFO  App  
+ Request finished in 76.4386ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 23:39:46,841 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 23:39:47,156 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 23:39:47,164 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 23:39:47,174 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 23:39:47,182 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 23:39:48,228 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 23:39:48,260 [4] INFO  App  
+ Request finished in 33.5832ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 23:39:48,369 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 23:39:48,493 [4] INFO  App  
+ Request finished in 124.969ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 23:39:57,993 [10] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test  0 
+ 
+2020-03-09 23:39:58,003 [10] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-09 23:39:58,028 [10] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 23:39:58,060 [10] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test(System.String) on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-09 23:39:58,227 [10] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-09 23:40:00,031 [10] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-09 23:40:00,520 [10] INFO  App  
+ Executed DbCommand (35ms) [Parameters=[@__IsNullOrEmpty_0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x
+WHERE @__IsNullOrEmpty_0 = TRUE 
+ 
+2020-03-09 23:42:09,576 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 23:42:09,879 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 23:42:09,885 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 23:42:09,894 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 23:42:09,900 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 23:42:11,172 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 23:42:11,203 [4] INFO  App  
+ Request finished in 31.7777ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 23:42:11,284 [10] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 23:42:11,363 [10] INFO  App  
+ Request finished in 78.4803ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 23:42:17,618 [10] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test  0 
+ 
+2020-03-09 23:42:17,628 [10] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-09 23:42:17,651 [10] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 23:42:17,682 [10] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test(System.String) on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-09 23:42:17,835 [10] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-09 23:42:24,779 [10] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-09 23:42:25,222 [10] INFO  App  
+ Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x 
+ 
+2020-03-09 23:42:49,959 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 23:42:50,247 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 23:42:50,259 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 23:42:50,266 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 23:42:50,273 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 23:42:51,112 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 23:42:51,148 [4] INFO  App  
+ Request finished in 36.4473ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 23:42:51,245 [10] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 23:42:51,332 [10] INFO  App  
+ Request finished in 86.4056ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 23:43:03,321 [4] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test?testString=1  0 
+ 
+2020-03-09 23:43:03,333 [4] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-09 23:43:03,356 [4] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 23:43:03,385 [4] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test(System.String) on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-09 23:43:03,540 [4] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-09 23:43:06,341 [4] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-09 23:43:06,859 [4] INFO  App  
+ Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x
+WHERE x."Author" = 'narojay' 
+ 
+2020-03-09 23:43:44,698 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 23:43:44,981 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 23:43:44,988 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 23:43:44,995 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 23:43:45,002 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 23:43:46,113 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 23:43:46,147 [4] INFO  App  
+ Request finished in 34.7098ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 23:43:46,260 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 23:43:46,368 [4] INFO  App  
+ Request finished in 108.0572ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 23:43:58,415 [9] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test?testString=1  0 
+ 
+2020-03-09 23:43:58,425 [9] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-09 23:43:58,448 [9] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 23:43:58,477 [9] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test(System.String) on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-09 23:43:58,628 [9] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-09 23:44:10,687 [9] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-09 23:44:11,159 [9] INFO  App  
+ Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x
+WHERE x."CatalogId" = '144a285d-b0d5-43ce-93de-492bb5a83880' 
+ 
+2020-03-09 23:47:23,184 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 23:47:23,482 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 23:47:23,490 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 23:47:23,496 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 23:47:23,507 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 23:47:24,689 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 23:47:24,720 [4] INFO  App  
+ Request finished in 31.6392ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 23:47:24,810 [8] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 23:47:24,887 [8] INFO  App  
+ Request finished in 76.7077ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 23:47:33,441 [11] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test?testString=1  0 
+ 
+2020-03-09 23:47:33,452 [11] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-09 23:47:33,477 [11] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 23:47:33,507 [11] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test(System.String) on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-09 23:47:33,664 [11] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-09 23:47:34,043 [11] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-09 23:47:34,518 [11] INFO  App  
+ Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x
+WHERE x."CatalogId" IN ('144a285d - b0d5 - 43ce - 93de - 492bb5a83880') 
+ 
+2020-03-09 23:48:35,593 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 23:48:35,911 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 23:48:35,919 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 23:48:35,927 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 23:48:35,938 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 23:48:37,163 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 23:48:37,204 [4] INFO  App  
+ Request finished in 42.8056ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 23:48:37,303 [9] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 23:48:37,404 [9] INFO  App  
+ Request finished in 101.2882ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 23:49:15,616 [9] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test?testString=3  0 
+ 
+2020-03-09 23:49:15,627 [9] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-09 23:49:15,650 [9] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 23:49:15,680 [9] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test(System.String) on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-09 23:49:15,834 [9] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-09 23:49:16,207 [9] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-09 23:49:16,676 [9] INFO  App  
+ Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x
+WHERE x."CatalogId" IN ('144a285d-b0d5-43ce-93de-492bb5a83880') 
+ 
+2020-03-09 23:49:31,387 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-09 23:49:31,676 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-09 23:49:31,683 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-09 23:49:31,691 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-09 23:49:31,699 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-09 23:49:32,613 [7] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-09 23:49:32,651 [7] INFO  App  
+ Request finished in 38.4795ms 200 text/html;charset=utf-8 
+ 
+2020-03-09 23:49:32,750 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-09 23:49:32,847 [4] INFO  App  
+ Request finished in 96.7978ms 200 application/json;charset=utf-8 
+ 
+2020-03-09 23:49:37,531 [10] INFO  App  
+ Request starting HTTP/2 POST https://localhost:8087/api/Article/test  0 
+ 
+2020-03-09 23:49:37,541 [10] INFO  App  
+ CORS policy execution successful. 
+ 
+2020-03-09 23:49:37,566 [10] INFO  App  
+ Executing endpoint 'NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi)' 
+ 
+2020-03-09 23:49:37,596 [10] INFO  App  
+ Route matched with {action = "test", controller = "Article"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult test(System.String) on controller NarojayBlog.Webapi.Controllers.ArticleController (NarojayBlog.Webapi). 
+ 
+2020-03-09 23:49:37,749 [10] INFO  App  
+ Executing action method NarojayBlog.Webapi.Controllers.ArticleController.test (NarojayBlog.Webapi) - Validation state: Valid 
+ 
+2020-03-09 23:49:38,115 [10] INFO  App  
+ Entity Framework Core 2.2.4-servicing-10062 initialized 'NarojayContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL' with options: None 
+ 
+2020-03-09 23:49:38,574 [10] INFO  App  
+ Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT x."Id", x."Author", x."CatalogId", x."CommentAmount", x."Content", x."CreateTime", x."PraiseAmount", x."ReadingAmount", x."Title"
+FROM "Articles" AS x 
+ 

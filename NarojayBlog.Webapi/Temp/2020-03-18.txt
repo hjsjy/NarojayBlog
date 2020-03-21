@@ -1,0 +1,135 @@
+2020-03-18 17:34:06,387 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-18 17:34:06,714 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-18 17:34:06,719 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-18 17:34:06,723 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-18 17:34:06,728 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-18 17:34:07,091 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger   
+ 
+2020-03-18 17:34:07,104 [4] INFO  App  
+ Request finished in 13.0922ms 301  
+ 
+2020-03-18 17:34:07,112 [5] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-18 17:34:07,142 [5] INFO  App  
+ Request finished in 30.6237ms 200 text/html;charset=utf-8 
+ 
+2020-03-18 17:34:07,154 [10] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/swagger-ui.css   
+ 
+2020-03-18 17:34:07,155 [5] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/swagger-ui-bundle.js   
+ 
+2020-03-18 17:34:07,156 [9] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/swagger-ui-standalone-preset.js   
+ 
+2020-03-18 17:34:07,187 [10] INFO  App  
+ Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+ 
+2020-03-18 17:34:07,187 [9] INFO  App  
+ Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+ 
+2020-03-18 17:34:07,192 [10] INFO  App  
+ Request finished in 38.6056ms 200 text/css 
+ 
+2020-03-18 17:34:07,195 [4] INFO  App  
+ Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+ 
+2020-03-18 17:34:07,198 [9] INFO  App  
+ Request finished in 44.0641ms 200 application/javascript 
+ 
+2020-03-18 17:34:07,210 [4] INFO  App  
+ Request finished in 56.3184ms 200 application/javascript 
+ 
+2020-03-18 17:34:07,308 [5] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-18 17:34:07,328 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/favicon-32x32.png   
+ 
+2020-03-18 17:34:07,335 [4] INFO  App  
+ Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+ 
+2020-03-18 17:34:07,341 [4] INFO  App  
+ Request finished in 12.0658ms 200 image/png 
+ 
+2020-03-18 17:34:07,391 [5] INFO  App  
+ Request finished in 83.2145ms 200 application/json;charset=utf-8 
+ 
+2020-03-18 17:36:31,495 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-18 17:36:31,757 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-18 17:36:31,762 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-18 17:36:31,767 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-18 17:36:31,771 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-18 17:36:32,360 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-18 17:36:32,391 [4] INFO  App  
+ Request finished in 32.6028ms 200 text/html;charset=utf-8 
+ 
+2020-03-18 17:36:32,540 [9] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-18 17:36:32,628 [9] INFO  App  
+ Request finished in 87.7689ms 200 application/json;charset=utf-8 
+ 
+2020-03-18 17:38:46,451 [1] INFO  App  
+ User profile is available. Using 'C:\Users\narojay\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+ 
+2020-03-18 17:38:46,692 [1] INFO  App  
+ Now listening on: https://localhost:8087 
+ 
+2020-03-18 17:38:46,698 [1] INFO  App  
+ Application started. Press Ctrl+C to shut down. 
+ 
+2020-03-18 17:38:46,703 [1] INFO  App  
+ Hosting environment: Development 
+ 
+2020-03-18 17:38:46,708 [1] INFO  App  
+ Content root path: C:\Users\narojay\source\repos\NarojayBlog\NarojayBlog.Webapi 
+ 
+2020-03-18 17:38:47,433 [7] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/index.html   
+ 
+2020-03-18 17:38:47,467 [7] INFO  App  
+ Request finished in 35.1632ms 200 text/html;charset=utf-8 
+ 
+2020-03-18 17:38:47,550 [10] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-18 17:38:47,633 [10] INFO  App  
+ Request finished in 83.0561ms 200 application/json;charset=utf-8 
+ 
+2020-03-18 17:39:28,805 [10] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/swagger/v1/swagger.json   
+ 
+2020-03-18 17:39:28,821 [10] INFO  App  
+ Request finished in 15.5954ms 200 application/json;charset=utf-8 
+ 
+2020-03-18 17:39:28,851 [4] INFO  App  
+ Request starting HTTP/2 GET https://localhost:8087/favicon.ico   
+ 
+2020-03-18 17:39:28,880 [4] INFO  App  
+ Request finished in 28.9144ms 404  
+ 

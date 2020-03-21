@@ -1,10 +1,15 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using NarojayBlog.DatabaseRepository.DbContext;
 using NarojayBlog.Manager.Entiy;
 using NarojayBlog.Manager.IManager;
 using NarojayBlog.ViewModel;
 using System;
 using System.Linq;
+using System.Net.Http;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace NarojayBlog.Webapi.Controllers
 {
@@ -12,10 +17,12 @@ namespace NarojayBlog.Webapi.Controllers
 
     {
         private readonly IArticleManager _articleManager;
+        private  readonly NarojayContext _context;
 
-        public ArticleController(IArticleManager articleManager, IMapper mapper) : base(mapper)
+        public ArticleController(IArticleManager articleManager, IMapper mapper, NarojayContext context) : base(mapper)
         {
             _articleManager = articleManager;
+            _context = context;
         }
 
         [HttpGet("WordsNumber")]
@@ -79,5 +86,32 @@ namespace NarojayBlog.Webapi.Controllers
             }
             return Ok();
         }
+        [HttpPost("test")]
+        public async Task<IActionResult> test()
+        {
+
+            try
+            {
+                var result =   LongRunningCancellableOperation();
+                return Ok(await result);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+
+
+        }
+
+        private async   Task<string> LongRunningCancellableOperation() 
+        {
+            var httpClient = new HttpClient();
+        
+            var stringAsyn1c = await  httpClient.GetStringAsync("http://www.taobao.com");
+            var stringAsyn2c = await httpClient.GetStringAsync("http://www.baidu.com");
+            var stringAsyn3c = await httpClient.GetStringAsync("http://www.github.com");
+            return stringAsyn1c;
+        }
+         
     }
 }

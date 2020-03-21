@@ -4,11 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using NarojayBlog.Core;
 using NarojayBlog.DatabaseRepository.DbContext;
 using NarojayBlog.Webapi.Filters;
 using NarojayBlog.Webapi.Helper;
-using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerUI;
 
 namespace NarojayBlog.Webapi
@@ -29,19 +30,22 @@ namespace NarojayBlog.Webapi
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(options =>
+            services.AddControllersWithViews(options =>
             {
                 options.Filters.Add<ValidateModelAttribute>();
-            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+                options.EnableEndpointRouting = false;
+            });
             services.Configure<ApiBehaviorOptions>(options => options.SuppressModelStateInvalidFilter = true);
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new Info
+                options.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "NarojayBlogAPI",
                     Version = "v1",
                     Description = "restful api for narojay blog"
                 });
+
+
             });
             var connectionString = Configuration.GetConnectionString("pgsql");
             services.AddDbContext<NarojayContext>(options => options.UseNpgsql(connectionString));
@@ -50,7 +54,7 @@ namespace NarojayBlog.Webapi
             services.AddRepositories();
             services.AddCors();
         }
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -69,7 +73,13 @@ namespace NarojayBlog.Webapi
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseHttpsRedirection();
             app.UseMiddleware<ErrorHandlingMiddleware>();
-            app.UseMvc();
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }
