@@ -4,7 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace NarojayBlog.ViewModel
-{
+{/// <summary>
+/// 11
+/// </summary>
     public class ArticleAddViewModel
     {
         public DateTime CreateTime { get; set; }
