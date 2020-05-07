@@ -16,6 +16,7 @@ namespace NarojayBlog.Webapi.Controllers
         [HttpGet("GuestBook")]
         public IActionResult GetGuestBooks()
         {
+            int a = 0;
             var result = _guestBookManager.GetAllGuestBook();
             return Ok(result);
         }
