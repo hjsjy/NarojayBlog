@@ -8,6 +8,7 @@ namespace NarojayBlog.Webapi.Controllers
 {
     public class CatalogController : BaseController
     {
+        private int a = 1;
         private readonly ICatalogManager _catalogManager;
 
         public CatalogController(IMapper mapper, ICatalogManager catalogManager) : base(mapper)
