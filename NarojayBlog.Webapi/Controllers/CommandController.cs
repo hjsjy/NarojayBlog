@@ -16,7 +16,7 @@ namespace NarojayBlog.Webapi.Controllers
         public CommandController(IMapper mapper) : base(mapper)
         {
 
-
+            int c = 1;
         }
     }
 }
