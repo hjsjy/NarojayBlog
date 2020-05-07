@@ -6,6 +6,7 @@ namespace NarojayBlog.Webapi.Controllers
     {
         public CommentController(IMapper mapper) : base(mapper)
         {
+            int a = 1;
         }
     }
 }
