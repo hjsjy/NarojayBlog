@@ -16,6 +16,7 @@ namespace NarojayBlog.Webapi.Controllers
     public class ArticleController : BaseController
 
     {
+
         private readonly IArticleManager _articleManager;
         private  readonly NarojayContext _context;
 
