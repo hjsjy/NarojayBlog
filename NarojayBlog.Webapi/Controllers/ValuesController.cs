@@ -23,6 +23,7 @@ namespace NarojayBlog.Webapi.Controllers
         private const string ClientId = "group_id@@@0001";
         public ValuesController(IMapper mapper,NarojayContext context) : base(mapper)
         {
+            int a = 2;
             _context = context;
         }
 
