@@ -6,6 +6,7 @@ namespace NarojayBlog.Webapi.Controllers
     {
         public HomeController(IMapper mapper) : base(mapper)
         {
+            int c = 3;
         }
     }
 }
