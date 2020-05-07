@@ -9,6 +9,7 @@ namespace NarojayBlog.Webapi.Controllers
             int a = 1;
             int b = 1;
             int f = 2;
+            int c = 1;
         }
     }
 }
